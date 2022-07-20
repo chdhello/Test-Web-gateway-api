@@ -1,0 +1,159 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Shipping Label</title>
+    <style type="text/css">
+        @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700&display=swap');
+        @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            font-size: 14px;
+            color: #222;
+            font-weight: 300;
+        }
+
+
+        @page {
+            size: A4;
+            margin: 0;
+        }
+
+        @media print {
+            html, body {
+                width: 210mm;
+                height: 297mm;
+            }
+
+            .page {
+                margin: 0;
+                border: initial;
+                border-radius: initial;
+                width: initial;
+                min-height: initial;
+                box-shadow: initial;
+                background: initial;
+                page-break-after: always;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <table cellpadding="0" cellspacing="0" border="0" width="600" style="width: 600px; padding:0;">
+        <tr>
+            <td>
+                <table cellpadding="0" cellspacing="0" border="0" style="padding:0;width:600px">
+                    <tr>
+                        <td>
+                            <table width="600" cellpadding="0" cellspacing="0" border="0" bgcolor="#FFFFFF" style="padding:0;margin:0;">
+                                <tr>
+                                    <td height="10" colspan="3"></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img src="{{appBaseUrl}}/img_header.png" width="600" height="100" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td height="10" colspan="3"></td>
+                                </tr>
+                            </table>
+                            <table width="600" bgcolor="#fff" cellpadding="0" cellspacing="0" border="0">
+                                <tr>
+                                    <td colspan="3" height="15">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td width="10px">&nbsp;</td>
+                                    <td style="font-family: 'Roboto', sans-serif; font-size: 14px; color:#222222; padding-left:64px;">
+                                        Please send us your device using the prepaid label provided here below and pack your device securely to avoid any damage
+                                        while in transit to our warehouse.
+                                    </td>
+                                    <td width="10px">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3" height="25">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td width="10px">&nbsp;</td>
+                                    <td style="border-bottom: 1px solid #ccc; padding-bottom: 10px; padding-left:64px;"><span style="text-decoration: none; font-family: 'Roboto', sans-serif; font-size: 14px; color:#222222;">Don’t forget to :</span></td>
+                                    <td width="10px">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3" height="10" style="font-size: 5px;">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td width="10px">&nbsp;</td>
+                                    <td style="border-bottom: 1px solid #ccc; padding-bottom: 10px;padding-left:64px;">
+                                        <table border="0" cellpadding="0" cellspacing="0" width="600" style="line-height:20px;">
+                                            <tr>
+                                                <td width="18"><img src="{{appBaseUrl}}/icon-check.png" alt="" height="18" width="18" /></td>
+                                                <td width="5"></td>
+                                                <td height="25" style="text-decoration: none; font-family: 'Roboto', sans-serif; font-size: 14px; color:#222222;">Remove sim card</td>
+                                            </tr>
+                                            <tr style="display:{{DisplayMemoryCard}}">
+                                                <td width="18"><img src="{{appBaseUrl}}/icon-check.png" alt="" height="18" width="18" /></td>
+                                                <td width="5"></td>
+                                                <td height="25" style="text-decoration: none; font-family: 'Roboto', sans-serif; font-size: 14px; color:#222222;">Remove memory card</td>
+                                            </tr>
+                                            <tr>
+                                                <td width="18"><img src="{{appBaseUrl}}/icon-check.png" alt="" height="18" width="18" /></td>
+                                                <td width="5"></td>
+                                                <td height="25" style="text-decoration: none; font-family: 'Roboto', sans-serif; font-size: 14px; color:#222222;">Restore device to factory settings and log out of your accounts</td>
+                                            </tr>
+                                            <tr style="display:{{IsFMIPDisplay}}">
+                                                <td width="18"><img src="{{appBaseUrl}}/icon-check.png" alt="" height="18" width="18" /></td>
+                                                <td width="5"></td>
+                                                <td height="25" style="text-decoration: none; font-family: 'Roboto', sans-serif; font-size: 14px; color:#222222;">Turn off Find My iPhone (FMIP) – <a href="https://support.apple.com/kb/ph19302?locale=en_US" target="_blank" style="color: #005BAB;font-weight:600; text-decoration: none;">How to turn it off?</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td width="18"><img src="{{appBaseUrl}}/icon-check.png" alt="" height="18" width="18" /></td>
+                                                <td width="5"></td>
+                                                <td height="25" style="text-decoration: none; font-family: 'Roboto', sans-serif; font-size: 14px; color:#222222;">Remove any other PIN and pattern lock from your phone</td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td width="10px">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3" height="30" style="font-size: 5px;">&nbsp;</td>
+                                </tr>
+                                <tr bgcolor="#ddd">
+                                    <td width="10px" style="border-bottom: 2px dashed #444444">&nbsp;</td>
+                                    <td height="30" style="border-bottom: 2px dashed #444444;padding-left:64px;">
+                                        <span style="color:#333333; text-decoration: none; font-family: 'Roboto', sans-serif; font-size: 11px;">
+                                            <strong>PRE-PAID LABEL</strong>&nbsp;&nbsp;PLEASE AFFIX ON PACKAGING
+                                        </span>
+                                    </td>
+                                    <td width="10px" style="border-bottom: 2px dashed #444444">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3" align="center" style="font-family: 'Roboto', sans-serif; font-size: 14px; color: #000; line-height: 20px">
+                                        <img style="width:100%;vertical-align: -webkit-baseline-middle; margin-left: 150px;" src="{{SwissPostShipmentLabel}}" alt="" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="10px">&nbsp;</td>
+                                    <td style="border-bottom: 1px solid #ccc; padding-bottom: 10px; padding-left:64px;">
+                                        <b>Transaction ID:  {{OrderDetailID}} </b><br>
+                                        <img src="{{OrderDetailIdBarcode}}" style="vertical-align: -webkit-baseline-middle;" height="60" />
+                                    </td>
+                                    <td width="10px">&nbsp;</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
+

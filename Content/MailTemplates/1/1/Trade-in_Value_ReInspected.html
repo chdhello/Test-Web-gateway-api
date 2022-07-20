@@ -1,0 +1,341 @@
+﻿<!DOCTYPE html
+          PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <!-- If you delete this tag, the sky will fall on your head -->
+    <meta name="viewport" content="width=device-width" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title></title>
+    <!--<style>
+        .button {
+            background-color: green;
+            border: none;
+            color: white;
+            padding: 10px 16px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 20px;
+            margin: 4px 2px;
+            border-radius: 12px;
+            cursor: pointer;
+        }
+    </style>-->
+</head>
+<body bgcolor="#FFFFFF" style="padding:0; margin:0;">
+    <!-- HEADER -->
+    <table cellpadding="0" cellspacing="0" border="0" width="600" style="width: 600px; padding:0;">
+        <tr>
+            <td>
+                <table cellpadding="0" cellspacing="0" border="0" width="600" style="padding:0;">
+
+                    <tr>
+
+                        <td>
+                            <table width="600" cellpadding="0" cellspacing="0" border="0" bgcolor="#FFFFFF" style="padding:0;margin:0;">
+                                <tr>
+                                    <td height="10" colspan="4"></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img src="{{appBaseUrl}}/img_header.png" width="600" height="100" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td height="10" colspan="4"></td>
+                                </tr>
+                            </table>
+
+                            <table width="600" cellpadding="0" cellspacing="0" border="0" style="color:#333; text-decoration: none; font-family: Arial, sans-serif; font-size: 14px;padding:0;margin:0;">
+                                <tr>
+                                    <td colspan="3" height="15" style="font-size: 10px;"></td>
+                                </tr>
+                                <tr>
+                                    <!--<td width="10px">&nbsp;</td>-->
+                                    <td>
+                                        <span style="color:#000000; text-decoration: none; font-family: Arial, sans-serif; font-size: 12px;padding:0;margin:0;">Dear {{CustomerName}},</span>
+                                        <br />
+                                        <br />
+                                        <!--<p style="color:#000000; text-decoration: none; font-family: Arial, sans-serif; font-size: 12px;padding:0;margin:0;">
+                                            <br />
+
+                                            Thanks for using weSwitch by weFix.
+
+                                        </p>-->
+                                        <p style="color:#000000; text-decoration: none; font-family: Arial, sans-serif; font-size: 12px;padding:0;margin:0;">
+                                            Thank you for participating in our Trade-In program. To ensure accurate device valuation, we’ve have<br /> performed an additional round of testing on your device received under transaction ID {{OrderDetailID}}.
+
+
+                                            <!--We’ve completed a second round of  inspections on your device booked in on transaction ID {{OrderDetailID}}.-->
+                                        </p>
+                                    </td>
+                                    <!--<td width="10px">&nbsp;</td>-->
+                                </tr>
+                                <tr>
+                                    <td colspan="3" height="10" style="font-size: 18px;">&nbsp;</td>
+                                </tr>
+                            </table>
+                            <table width="600" cellpadding="0" cellspacing="0" border="0" style="text-decoration: none;  font-size: 15px;padding:0;margin:0;">
+                                <tr>
+                                    <!--<td width="2px">&nbsp;</td>-->
+                                    <td>
+
+                                        Please see the details of inspection below:
+                                       
+                                    </td>
+                                    <!--<td width="10px">&nbsp;</td>-->
+                                </tr>
+                               
+                            </table>
+                            {{datarows}}
+
+                            <table width="600" cellpadding="0" cellspacing="0" border="0" style="color:#333; text-decoration: none; font-family: Arial, sans-serif; font-size: 14px;padding:0;margin:0;">
+                                <tr>
+                                    <td colspan="3" height="15" style="font-size: 10px;"></td>
+                                </tr>
+                                <tr>
+                                    <!--<td width="10px">&nbsp;</td>-->
+                                    <td>
+                                        <p style="color:#000000; text-decoration: none; font-family: Arial, sans-serif; font-size: 12px;padding:0;margin:0;">
+                                            <!--The results of inspection cycle {{finalInspectionNumber}} are considered as final.-->
+                                            *The results of last inspection cycle are considered as final.
+                                        </p>
+                                    </td>
+                                    <!--<td width="10px">&nbsp;</td>-->
+                                </tr>
+                                <!--<tr>
+                                    <td colspan="3" height="10" style="font-size: 18px;">&nbsp;</td>
+                                </tr>-->
+                            </table><br />
+                            <table bgcolor="#fff" cellpadding="0" cellspacing="0" border="0" width="600">
+                                <!--<tr>
+                                    <td colspan="3" height="3" style="font-size: 5px;">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3" height="3" style="font-size: 5px;">&nbsp;</td>
+                                </tr>-->
+                                <tr>
+                                    <td colspan="3" height="3" style="font-size: 5px;">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <!--<td width="2px">&nbsp;</td>-->
+                                    <!--<td>
+                                        <b>Tech report:</b>
+                                    </td>-->
+                                    <!--<td width="10px">&nbsp;</td>-->
+                                </tr>
+
+                            </table>
+                            <table width="600" bgcolor="#fff" cellpadding="0" cellspacing="0" border="0">
+                                <tr>
+                                    <!--<td width="10px">&nbsp;</td>-->
+                                    <td style="color:#222; text-decoration: none; font-family: Arial, sans-serif; font-size: 12px;" valign="top">Please click <a href="{{WebsiteURL}}/login" target="_blank" style="color: #005BAB; text-decoration: none;font-weight:600;"><u>here</u></a> for further details/images of the faults mentioned above.</td>
+                                    <!--<td width="10px">&nbsp;</td>-->
+                                </tr>
+                                <!--<tr>
+                                    <td colspan="3" height="8">&nbsp;</td>
+                                </tr>-->
+                            </table><br />
+                            <table bgcolor="#fff" cellpadding="0" cellspacing="0" border="0" width="600">
+                                <!--<tr>
+        <td colspan="3" height="3" style="font-size: 5px;">&nbsp;</td>
+    </tr>-->
+                                <!--<tr>
+        <td colspan="3" height="3" style="font-size: 5px;">&nbsp;</td>
+    </tr>-->
+                                <tr>
+                                    <td colspan="3" height="3" style="font-size: 5px;">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <!--<td width="2px">&nbsp;</td>-->
+                                    <!--<td>
+                                        <b>Accept: </b>
+                                    </td>-->
+                                    <!--<td width="10px">&nbsp;</td>-->
+                                </tr>
+                                <!--<tr>
+        <td colspan="3" height="3" style="font-size: 5px;">&nbsp;</td>
+    </tr>-->
+                            </table>
+
+                            <table cellspacing="0" cellpadding="0" width="600" bgcolor="#FFFFFF">
+                                <!--<tr>
+        <td colspan="3" height="10" style="font-size:5px;">&nbsp;</td>
+    </tr>-->
+                                <tr>
+                                    <td style="font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #000000; line-height:20px;">
+                                       
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <!--<td width="10">&nbsp;</td>-->
+                                    <td style="font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #000000; line-height:20px;">
+                                        If you accept the revised value  <a href="{{WebsiteAcceptURL}}"><b>confirm here.</b></a> You will receive your payment within {{QuoteAutoAcceptDays}} days, through the payment method selected during the quote process. If you do not revert to us within the next {{QuoteAutoAcceptDays}} days, the revised value of {{CurrencySymbol}} {{InspectedPrice}} will be automatically accepted and the payment will be processed.
+                                        <!--To accept your revised offer, <a href="{{WebsiteAcceptURL}}"><b>click here.</b></a> <br /> If you selected <b>EFT</b> as your method of payment, please allow 5-7 working days for this to clear in your account.<br />-->
+                                        <!--If you selected a <b>weSwitch voucher</b>, this will be sent to you via SMS within the next working day. <br /> <img src="{{appBaseUrl}}/accept.png" width="70" height="30" />-->
+                                        <!--<span style="font-style: italic;">
+    *If you do not revert to us within the next {{QuoteAutoAcceptDays}} days, the revised value of {{CurrencySymbol}} {{InspectedPrice}}, will be automatically accepted and the payment will be processed.
+    </span>-->
+                                    </td>
+                                    <!--<td width="10">&nbsp;</td>-->
+                                </tr>
+                                <tr>
+                                    <td colspan="3" height="10" style="font-size:5px;">&nbsp;</td>
+                                </tr>
+                            </table>
+                            <table bgcolor="#fff" cellpadding="0" cellspacing="0" border="0" width="600">
+                                <tr>
+                                    <td colspan="3" height="3" style="font-size: 5px;">&nbsp;</td>
+                                </tr>
+
+                                <tr>
+                                    <!--<td width="2px">&nbsp;</td>-->
+                                    <!--<td>
+                                        <b>Reject: </b>
+                                    </td>-->
+                                    <!--<td width="10px">&nbsp;</td>-->
+                                </tr>
+                                <!--<tr>
+                                    <td colspan="3" height="3" style="font-size: 5px;">&nbsp;</td>
+                                </tr>-->
+                            </table>
+                            <table cellspacing="0" cellpadding="0" width="600" bgcolor="#FFFFFF">
+                                <!--<tr>
+        <td colspan="3" height="10" style="font-size:5px;">&nbsp;</td>
+    </tr>-->
+                                <!--<tr>
+                                    <td style="font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #000000; line-height:20px;">
+                                        Click below to reject your revised offer:
+                                    </td>
+                                </tr>-->
+                                <tr>
+                                    <!--<td width="0">&nbsp;</td>-->
+                                    <td style="font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #000000; line-height:20px;">
+                                        However, if you reject the revised value and would like us to return your device, please <a href="{{WebsiteAcceptURL}}"><b>click here</b></a>. Your<br /> device will be shipped back to you for free.
+                                        <!--To reject your revised offer, <a href="{{WebsiteAcceptURL}}"><b>click here.</b></a> <br />
+    It's all good, there's no hard feelings. Your device will be couriered back to you for free.-->
+                                    </td>
+                                    <!--<td width="10">&nbsp;</td>-->
+                                </tr>
+                                <tr>
+                                    <td colspan="3" height="10" style="font-size:5px;">&nbsp;</td>
+                                </tr>
+                            </table>
+                            <table bgcolor="#fff" cellpadding="0" cellspacing="0" border="0" width="600">
+                                <tr>
+                                    <td colspan="3" height="3" style="font-size: 5px;">&nbsp;</td>
+                                </tr>
+
+                                <tr>
+                                    <!--<td width="0px">&nbsp;</td>-->
+                                    <!--<td>
+                                        <b>What's the status of my apparatus? </b>
+                                    </td>-->
+                                    <!--<td width="10px">&nbsp;</td>-->
+                                </tr>
+                                <!--<tr>
+                                    <td colspan="3" height="3" style="font-size: 5px;">&nbsp;</td>
+                                </tr>-->
+                            </table>
+                            <!--<table width="600" bgcolor="#fff" cellpadding="0" cellspacing="0" border="0" style="border-bottom:1px dashed #dddddd;">
+        <tr>
+            <td height="15">&nbsp;</td>
+        </tr>
+        <tr>
+            <td width="10">&nbsp;</td>
+            <td style="font-family: Arial, Helvetica, sans-serif; font-size:12px;color: #000000;">However, if you reject the revised value and would like us to return your device, please <a href="{{WebsiteAcceptURL}}" style="color: #ff787c;font-weight:600; text-decoration: none;">click here.</a> . Your device will be shipped back to you for free. </td>
+            <td width="10">&nbsp;</td>
+        </tr>
+        <tr>
+            <td height="15">&nbsp;</td>
+        </tr>
+    </table>-->
+                            <table width="600" bgcolor="#fff" cellpadding="0" cellspacing="0" border="0">
+                                <!--<tr>
+                                    <td colspan="3" height="8px">&nbsp;</td>
+                                </tr>-->
+                                <tr>
+                                    <!--<td width="0px">&nbsp;</td>-->
+                                    <td style="font-family: Arial, Helvetica, sans-serif; font-size:12px;">You can track the status of your order from <a href="{{WebsiteURL}}/login" target="_blank" style="color: #005BAB;font-weight:600; text-decoration: none;"><u>here</u></a> using your email address to login.</td>
+                                    <!--<td width="10px">&nbsp;</td>-->
+                                </tr>
+                                <tr>
+                                    <td colspan="3" height="10" style="font-size: 10px;">&nbsp;</td>
+                                </tr>
+                                <!--<tr>
+            <td width="10px">&nbsp;</td>
+            <td>
+                <table cellpadding="0" cellspacing="0" border="0" bgcolor="#ffffff" style="min-width:600px;">
+                    <tr>
+                        <td nowrap="nowrap" style="font-family: Arial, Helvetica, sans-serif; font-size: 12px;color: #000;" width="60">Username:</td>
+                        <td width="10">&nbsp;</td>
+                        <td nowrap="nowrap" style="font-family: Arial, Helvetica, sans-serif; font-size: 12px;color: #000;">{{UserName}}</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" height="10" style="font-size: 8px;">&nbsp;</td>
+                    </tr>
+                </table>
+            </td>
+            <td width="10px">&nbsp;</td>
+        </tr>-->
+                                <!--<tr>
+                                    <td colspan="3" height="5" style="font-size: 5px;">&nbsp;</td>
+                                </tr>-->
+                            </table>
+                            <table cellspacing="0" cellpadding="0" width="600" bgcolor="#ffffff" border="0">
+                                <tr>
+                                    <td colspan="3" height="3" style="font-size: 5px;">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                 
+                                    <!--<td>
+                                        <b>Questions? </b>
+                                    </td>-->
+                                    <!--<td width="10px">&nbsp;</td>-->
+                                </tr>
+                                <tr>
+                                    <td colspan="3" height="3" style="font-size: 5px;">&nbsp;</td>
+                                </tr>
+                                <!-- <tr> -->
+                                <!-- <td colspan="3" height="10" style="font-size:5px;">&nbsp;</td> -->
+                                <!-- </tr> -->
+                                <tr>
+                                    <!--<td width="0px">&nbsp;</td>-->
+                                    <td align="left" style="font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #000; line-height: 20px">
+                                        If you have further questions about your order you can always contact us by email at <a href="mailto:{{ContactEmail}}" target="_blank" style="color: #005BAB; text-decoration:none;"><u>{{ContactEmail}} </u></a>.
+                                        <!--or<br /> call us on <a href="" target="_blank" style="color: #005BAB;">0xxxx xxxxx</a><br />-->
+                                    </td>
+                                    <!--<td width="10px">&nbsp;</td>-->
+                                </tr>
+                                <tr>
+                                    <td colspan="3" height="10" style="font-size:5px;">&nbsp;</td>
+                                </tr>
+                            </table>
+                            <table cellspacing="0" cellpadding="0" width="600" bgcolor="#ffffff" border="0">
+                                <tr>
+                                    <td colspan="3" height="10" style="font-size:5px;">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <!--<td width="2px">&nbsp;</td>-->
+                                    <td align="left" style="font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #000; line-height: 20px">
+                                        Yours sincerely,<br />
+                                        SELLNET
+
+                                    </td>
+                                    <!--<td width="10px">&nbsp;</td>-->
+                                </tr>
+                                <tr>
+                                    <td colspan="3" height="10" style="font-size:5px;">&nbsp;</td>
+                                </tr>
+                            </table>
+                           
+
+                        </td>
+
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

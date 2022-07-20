@@ -1,0 +1,352 @@
+﻿<!DOCTYPE html
+          PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <!-- If you delete this tag, the sky will fall on your head -->
+    <meta name="viewport" content="width=device-width" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title></title>
+</head>
+
+<body bgcolor="#FFFFFF" style="padding:0; margin:0;">
+    <!-- HEADER -->
+    <table cellpadding="0" cellspacing="0" border="0" width="600" style="width: 600px; padding:0;">
+        <tr>
+            <td>
+                <table cellpadding="0" cellspacing="0" border="0" style="padding:0;width:600px">
+
+                    <tr>
+
+                        <td>
+                            <table width="600" cellpadding="0" cellspacing="0" border="0" bgcolor="#FFFFFF" style="padding:0;margin:0;">
+                                <tr>
+                                    <td height="10" colspan="4"></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img src="{{appBaseUrl}}/img_header.png" width="600" height="100" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td height="10" colspan="4"></td>
+                                </tr>
+                            </table>
+
+                            <table width="600" cellpadding="0" cellspacing="0" border="0" style="color:#333; text-decoration: none; font-family: Arial, sans-serif; font-size: 14px;padding:0;margin:0;">
+                                <tr>
+                                    <td colspan="3" height="15" style="font-size: 10px;"></td>
+                                </tr>
+                                <tr>
+                                    <td width="10px">&nbsp;</td>
+                                    <td>
+                                        <span style="color:#000000; text-decoration: none; font-family: Arial, sans-serif; font-size: 12px;padding:0;margin:0;">Hi {{CustomerName}},</span>
+                                        <p style="color:#000000; text-decoration: none; font-family: Arial, sans-serif; font-size: 12px;padding:0;margin:0;">
+                                            <br />
+                                            High 5! You've successfully scratched that itch and are on route to switching your device into cash. 
+                                            Just visit your nearest <a href="#" style="color: #005BAB;font-weight:600; text-decoration: none;"><u>Store</u></a> and drop your device off. So <b>Fixin’ exciting! </b>
+
+
+                                        </p>
+                                    </td>
+                                    <td width="10px">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3" height="10" style="font-size: 18px;">&nbsp;</td>
+                                </tr>
+                            </table>
+                            <table style="padding:0;border-collapse: collapse; max-width: 600px;border:1px solid #ccc;" width="600">
+                                <tr>
+                                    <td colspan="3" height="3" style="font-size: 5px;">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <!--<td width="10px">&nbsp;</td>-->
+                                    <td>
+                                        <b>Order details:</b>
+                                    </td>
+                                    <td width="10px">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3" height="3" style="font-size: 5px;">&nbsp;</td>
+                                </tr>
+                            </table>
+
+
+
+                            <table style="padding:0;border-collapse: collapse; max-width: 600px;border:1px solid #ccc;" width="600">
+                                <tbody>
+                                    <tr>
+                                        <td bgColor="#f0f0f0" style="border-width: 1px;padding: 8px;color:#808080;border-style: solid;border-color:#f0f0f0;width:40%;font-family: Arial, Helvetica, sans-serif;font-size: 12px;">Transaction ID :</td>
+                                        <td style="padding: 8px; border-right:1px solid #ccc;width:60%;font-family: Arial, Helvetica, sans-serif;font-size: 12px;"> {{OrderDetailID}}</td>
+                                    </tr>
+                                    <tr>
+                                        <td bgColor="#f0f0f0" style="border-width: 1px;padding: 8px;color:#808080;border-style: solid;border-color:#f0f0f0;font-family: Arial, Helvetica, sans-serif;font-size: 12px;">Device quoted :</td>
+                                        <td style="padding: 8px; border-right:1px solid #ccc;font-family: Arial, Helvetica, sans-serif;font-size: 12px;">{{Model}}</td>
+                                    </tr>
+                                    <tr>
+                                        <td bgColor="#f0f0f0" style="border-width: 1px;padding: 8px;color:#808080;border-style: solid;border-color:#f0f0f0;font-family: Arial, Helvetica, sans-serif;font-size: 12px;">Quote amount :</td>
+                                        <td style="padding: 8px; border-right:1px solid #ccc;font-family: Arial, Helvetica, sans-serif;font-size: 12px;">{{CurrencySymbol}} {{QuotedPrice}} <i style="font-family: Arial, Helvetica, sans-serif;font-size: 11px;color:#999999;">* Subject to quality verification at our warehouse</i></td>
+                                    </tr>
+                                    <tr>
+                                        <td bgColor="#f0f0f0" style="border-width: 1px;padding: 8px;color:#808080;border-style: solid;border-color:#f0f0f0;font-family: Arial, Helvetica, sans-serif;font-size: 12px;">Valid up to :</td>
+                                        <td style="padding: 8px; border-right:1px solid #ccc;font-family: Arial, Helvetica, sans-serif;font-size: 12px;">{{ValidUpto}}</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <!--<table bgcolor="#fff" cellpadding="0" cellspacing="0" border="0" width="600">
+                                <tr>
+                                    <td colspan="3" height="3" style="font-size: 5px;">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td width="10px">&nbsp;</td>
+                                    <td>
+                                        <b>Collection details:</b>
+                                    </td>
+                                    <td width="10px">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3" height="3" style="font-size: 5px;">&nbsp;</td>
+                                </tr>
+                            </table>-->
+                            <table width="600" bgcolor="#fff" cellpadding="0" cellspacing="0" border="0" >
+                                <tr>
+                                    <td colspan="3" height="15">&nbsp;</td>
+                                </tr>
+                                <!--<tr>
+                                    <td width="10px">&nbsp;</td>
+                                    <td style="font-family: Arial, Helvetica, sans-serif; font-size: 12px; color:#555555;">  Please package your device in bubble wrap or protective wrapping and then package it securely in a box to avoid any damage in transit. If you have the original box it came in, this is always best for protection, alternatively any box will do.</td>
+                                    <td width="10px">&nbsp;</td>
+                                </tr>-->
+                                <!--<tr style="display:{{IsPrepaidLabel}}">
+                                    <td width="10px">&nbsp;</td>
+                                    <td style="font-family: Arial, Helvetica, sans-serif; font-size: 12px; color:#555555;">
+                                        Please use the prepaid label provided in the attachment to ship your device to us. Kindly pack your device carefully to avoid any damage in transit.
+                                    </td>
+                                    <td width="10px">&nbsp;</td>
+                                </tr>
+                                <tr style="display:{{IsReturnKit}}">
+                                    <td width="10px">&nbsp;</td>
+                                    <td style="font-family: Arial, Helvetica, sans-serif; font-size: 12px; color:#555555;">
+
+                                        You have chosen a free return kit, you will receive it within the next {{ReturnKitReceiveDays}} days.  Kindly pack your device carefully to avoid any damage in transit.
+                                    </td>
+
+                                    <td width="10px">&nbsp;</td>
+                                </tr>-->
+                                <tr>
+                                    <td colspan="3" height="15">&nbsp;</td>
+                                </tr>
+                                <tr></tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <table width="600" bgcolor="#fff" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+            <td height="15">&nbsp;</td>
+        </tr>
+        <tr>
+            <td width="10px">&nbsp;</td>
+            <td>
+                <b>Things to remember: </b>
+            </td>
+            <td width="10px">&nbsp;</td>
+        </tr>
+        <tr>
+            <td colspan="3" height="3" style="font-size: 5px;">&nbsp;</td>
+        </tr>
+        <tr>
+            <td width="10px">&nbsp;</td>
+            <td>
+                <!--<table border="0" cellpadding="0" cellspacing="0" width="600" style="line-height:20px;">
+        <tr>
+            <td width="18"><img src="{{appBaseUrl}}/icon-check.png" alt="" height="18" width="18" /></td>
+            <td width="5"></td>
+            <td style="text-decoration: none; font-family: Arial, sans-serif; font-size: 12px; color:#000000;">Remove sim card</td>
+        </tr>
+        <tr style="display:{{DisplayMemoryCard}}">
+            <td width="18"><img src="{{appBaseUrl}}/icon-check.png" alt="" height="18" width="18" /></td>
+            <td width="5"></td>
+            <td style="text-decoration: none; font-family: Arial, sans-serif; font-size: 12px; color:#000000;">Remove memory card</td>
+        </tr>
+        <tr>
+            <td width="18"><img src="{{appBaseUrl}}/icon-check.png" alt="" height="18" width="18" /></td>
+            <td width="5"></td>
+            <td style="text-decoration: none; font-family: Arial, sans-serif; font-size: 12px; color:#000000;">Restore device to factory settings and log out of your accounts</td>
+        </tr>
+        <tr style="display:{{IsFMIPDisplay}}">
+            <td width="18"><img src="{{appBaseUrl}}/icon-check.png" alt="" height="18" width="18" /></td>
+            <td width="5"></td>
+            <td style="text-decoration: none; font-family: Arial, sans-serif; font-size: 12px; color:#000000;">Turn off Find My iPhone (FMIP) – <a href="{{FMIPLockURL}}" target="_blank" style="color: #ff787c;font-weight:600; text-decoration: none;">How to turn it off?</a></td>
+        </tr>
+        <tr>
+            <td width="18"><img src="{{appBaseUrl}}/icon-check.png" alt="" height="18" width="18" /></td>
+            <td width="5"></td>
+            <td style="text-decoration: none; font-family: Arial, sans-serif; font-size: 12px; color:#000000;">Remove any other PIN and pattern lock from your phone</td>
+        </tr>
+
+    </table>-->
+                <ul style="list-style-type:disc; font-family: Arial, Helvetica, sans-serif; font-size:12px;">
+                    <li>Backup your data - Your device will be wiped when we receive it.</li>
+                    <li>Remove your sim card</li>
+                    <li>Remove your memory card</li>
+                    <li>Restore device to factory settings and log out of your accounts</li>
+                    <li>Turn off Find My iPhone (FMIP) – <a href="{{FMIPLockURL}}" target="_blank" style="color: #005BAB;font-weight:600; text-decoration: none;"><u>How to turn it off?</u></a></li>
+                    <li>Remove any other PIN and pattern lock from your phone</li>
+                </ul>
+            </td>
+            <td width="10px">&nbsp;</td>
+        </tr>
+        <tr>
+            <td colspan="3" height="15">&nbsp;</td>
+        </tr>
+    </table>
+    <table width="600" bgcolor="#fff" cellpadding="0" cellspacing="0" border="0" style="padding:0;border-collapse: collapse; max-width: 600px;">
+        <!--<tr>
+            <td colspan="3" height="15">&nbsp;</td>
+        </tr>-->
+        <tr>
+            <td width="10px">&nbsp;</td>
+            <td style="font-family: Arial, Helvetica, sans-serif; font-size: 12px; color:#555555;">
+
+                Please note that if your device is received after the offer expiry date (mentioned above), its trade-in value will be recalculated and may differ from the original trade-in value.<br />
+                Click here to view the <a href="{{TermsNCondition}}" target="_blank" style="color: #005BAB; text-decoration: none;font-weight:600;"><u>terms and conditions</u></a> of our weSwitch trade-in program.</a>
+            </td>
+            <td width="10px">&nbsp;</td>
+        </tr>
+        <tr>
+            <td colspan="3" height="15">&nbsp;</td>
+        </tr>
+    </table>
+    <table bgcolor="#fff" cellpadding="0" cellspacing="0" border="0" width="600">
+        <tr>
+            <td colspan="3" height="3" style="font-size: 5px;">&nbsp;</td>
+        </tr>
+
+        <tr>
+            <!--<td width="px">&nbsp;</td>-->
+            <td>
+                <b>What's the status of my apparatus? </b>
+            </td>
+            <td width="10px">&nbsp;</td>
+        </tr>
+        <tr>
+            <td colspan="3" height="3" style="font-size: 5px;">&nbsp;</td>
+        </tr>
+    </table>
+    <table width="600" bgcolor="#fff" cellpadding="0" cellspacing="0" border="0">
+        <!--<tr>
+            <td colspan="3" height="15">&nbsp;</td>
+        </tr>-->
+        <tr>
+            <td width="10px">&nbsp;</td>
+            <td style="font-family: Arial, Helvetica, sans-serif; font-size:12px;" width="600">You can track the status of your order  <a href="{{WebsiteURL}}/login" target="_blank" style="color: #005BAB; text-decoration: none;font-weight:600;"><u>here</u></a> using your email address to login.</td>
+        </tr>
+        <tr>
+            <td colspan="3" height="10" style="font-size: 10px;">&nbsp;</td>
+        </tr>
+        <!--<tr>
+            <td width="10px">&nbsp;</td>-->
+        <!--<td>
+            <table cellpadding="0" cellspacing="0" border="0" bgcolor="#ffffff" style="min-width:70%;">
+                <tr>
+                    <td nowrap="nowrap" style="font-family: Arial, Helvetica, sans-serif; font-size: 12px;color: #000;" width="60">Username:</td>
+                    <td width="10">&nbsp;</td>
+                    <td nowrap="nowrap" style="font-family: Arial, Helvetica, sans-serif; font-size: 12px;color: #000;">{{UserName}}</td>
+                </tr>
+                <tr>
+                    <td colspan="3" height="10" style="font-size: 8px;">&nbsp;</td>
+                </tr>
+            </table>
+        </td>-->
+        <!--<td width="10px">&nbsp;</td>
+            <td>
+                Questions?
+            </td>
+            <td width="10px">&nbsp;</td>
+            <td width="10px">&nbsp;</td>
+        </tr>-->
+        <!--<tr>
+            <td colspan="3" height="15">&nbsp;</td>
+        </tr>-->
+    </table>
+    <table cellspacing="0" cellpadding="0" width="600" bgcolor="#ffffff" border="0">
+        <tr>
+            <td width="10px">&nbsp;</td>
+            <td>
+                <b>Questions? </b>
+            </td>
+            <td width="10px">&nbsp;</td>
+        </tr>
+        <tr>
+            <td colspan="3" height="10" style="font-size:5px;">&nbsp;</td>
+        </tr>
+
+        <tr>
+            <td width="10px">&nbsp;</td>
+            <td align="left" style="font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #000; line-height: 20px">
+                If you have further questions about your order you can always contact us by email at <a href="mailto:{{ContactEmail}}" target="_blank" style="font-family: Arial, Helvetica, sans-serif; font-size: 12px;color: #005BAB;text-decoration:none;"><u>{{ContactEmail}}</u></a> and one of our customer service agents will happily assist you.
+                <!--or<br /> call us on <a href="" target="_blank" style="color: #005BAB;">0xxxx xxxxx</a><br />-->
+            </td>
+            <td width="10px">&nbsp;</td>
+        </tr>
+        <tr>
+            <td colspan="3" height="10" style="font-size:5px;">&nbsp;</td>
+        </tr>
+    </table>
+    <table cellspacing="0" cellpadding="0" width="600" bgcolor="#ffffff" border="0">
+        <tr>
+            <td colspan="3" height="10" style="font-size:5px;">&nbsp;</td>
+        </tr>
+        <tr>
+            <!--<td width="10px">&nbsp;</td>-->
+            <td align="left" style="font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #000; line-height: 20px">
+
+
+          
+
+            </td>
+            <td width="10px">&nbsp;</td>
+        </tr>
+        <tr>
+            <td colspan="3" height="10" style="font-size:5px;">&nbsp;</td>
+        </tr>
+    </table>
+    <!-- <table cellspacing="0" cellpadding="0" border="0" width="600" bgcolor="#F5F5F5" style="padding: 0; margin: 0;"> -->
+    <!-- <tr> -->
+    <!-- <td colspan="3" bgcolor="#F5F5F5" height="10"></td> -->
+    <!-- </tr> -->
+    <!-- <tr> -->
+    <!-- <td width="10"></td> -->
+    <!-- <td style="padding: 0; margin: 0;font-size: 12px; font-family: Arial, Helvetica, sans-serif;color:#3489CC" valign="top" width="23%"> -->
+    <!-- <a href="#" target="_blank" style="padding: 0; margin: 0;font-size: 12px; font-family: Arial, Helvetica, sans-serif;color:#3489CC; text-decoration: none;">About Us</a><br /> -->
+    <!-- <a href="#" target="_blank" style="padding: 0; margin: 0;font-size: 12px; font-family: Arial, Helvetica, sans-serif;color:#3489CC; text-decoration: none;">Customer Service</a> -->
+    <!-- </td> -->
+    <!-- <td style="padding: 0; margin: 0;font-size: 12px; font-family: Arial, Helvetica, sans-serif;color:#585E6A" valign="top" width="42%"> -->
+    <!-- (02) 9893 8886<br /> -->
+    <!-- Hours of Operation: -->
+    <!-- 10:00 AM - 6:00 PM. -->
+    <!-- </td> -->
+    <!-- <td style="padding: 0; margin: 0;font-size: 12px; font-family: Arial, Helvetica, sans-serif;color:#585E6A" valign="top"> -->
+    <!-- Mobileciti<br /> -->
+    <!-- Shop 8/118 Church Street<br /> -->
+    <!-- Parramatta, New South Wales<br /> -->
+    <!-- 2150, Australia -->
+    <!-- </td> -->
+    <!-- <td width="10"></td> -->
+    <!-- </tr> -->
+    <!-- <tr> -->
+    <!-- <td colspan="3" bgcolor="#F5F5F5" height="10"></td> -->
+    <!-- </tr> -->
+    <!-- </table> -->
+    </td>
+
+    </tr>
+    </table>
+    </td>
+    </tr>
+    </table>
+</body>
+</html>

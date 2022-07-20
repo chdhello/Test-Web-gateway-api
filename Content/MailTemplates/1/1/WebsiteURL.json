@@ -1,0 +1,56 @@
+{
+  "WebsiteURL": "http://sellnet-online-web.product.veridic.local/",
+  "DeviceDiagnosticURL": "http://9azsm.app.link/?EnterprisePartnerID={{EnterprisePartnerID}}&StoreID={{StoreID}}&StoreType={{StoreType}}",
+  "TermsconditionURL": "/terms-condition",
+  "FAQURL": "/faq",
+  "ContactEmail": "sellnet@sellnet.com",
+  "ContactNumber": "",
+
+  "DeviceDiagnosticsSubject": "Device Diagnostic URL",
+  "EmailAccountSubject": "Account Created",
+  "TradebleSubject": "Non Tradeable Device",
+
+  "EmailSubject": "Trade-in Confirmed; Transaction ID: {XXXX}",
+  "CompleteOrderDropOffSubject": "it's Sellnet official-Visit soon to drop it off",
+
+  "ReminderAwaitingEmailSubject": "Awaiting Trade-in Device; Transaction ID: {XXXX}",
+  "QuoteExpiredSubject": "Trade-In Quote Expired; Transaction ID: {XXXX}",
+  "TradeInComplete": "Trade-in complete; Transaction ID: {XXXX}",
+  "EmailQuoteAcceptSubject": "Let's talk money - Your Trade-In value has been revised -  Transaction ID: {XXXX}",
+  "QuoteRevisedEmailSubject": "Trade-in Value Revised; ACTION REQUIRED Transaction ID: {XXXX}",
+  "ReminderQuoteRevisedEmailSubject": "REMINDER: Trade-in Value Revised; ACTION REQUIRED Transaction ID: {XXXX}",
+  "FMIPLockedSubject": "Device received with FMiP active; ACTION REQUIRED Transaction ID: {XXXX}",
+  "UnresolvedFmipSubject": "UNRESOLVED FMiP; Device sent for recycling, Transaction ID: {XXXX}",
+  "StolenDeviceSubject": "Device received flagged as ‘Stolen’; ACTION REQUIRED Transaction ID: {XXXX}",
+  "SecretCodeSubject": "Your secret code for SELLNET",
+  "QuoteRejectSubject": "Revised value rejected, DEVICE RETURNED, Transaction ID: {XXXX}",
+  "QuoteConfirmSubject": " Trade-in complete; Transaction ID: {XXXX}",
+  "FMIPLockedRemovedSubject": "FMiP UNLOCKED; Transaction ID: {XXXX}",
+  "FMIPLockedUnResolvedSubject": "UNRESOLVED FMiP; Transaction ID: {XXXX}",
+  "FMIPLockedFirstReminder": "REMINDER: Device received with FMiP active; ACTION REQUIRED Transaction ID: {XXXX}",
+  "FMIPLockedSecondReminder": "REMINDER: Device received with FMiP active; ACTION REQUIRED Transaction ID: {XXXX}",
+
+  "AddUnexpectedSubject": "Device mismatch; Transaction ID: {XXXX}",
+  "FunctionalContent": "Functionality issues:",
+  "CosmeticContent": "Cosmetic issues:",
+  "ReInspectedSubject": "Device re-tested; ACTION REQUIRED Transaction ID: {XXXX}",
+
+  "InspectionCycle": "Inspection Cycle",
+  "DeviceInspected": "Device inspected",
+  "QuoteAmount": "Quote amount",
+  "RevisedQuoteAmount": "Revised Quote Amount",
+  "Reason": "Reason",
+  "RecycleEmailSubject": "Device Recycling Confirmed; Transaction ID: {XXXX}",
+
+  "BERRecycleSubject": "Trade-in Device sent for recycling; Transaction ID: {XXXX} ",
+
+  "BERTradeInValueRevisedSubject": "Trade-in Value Revised; ACTION REQUIRED Transaction ID: {XXXX}",
+  "BERTradeInValueRevisedReminderSubject": "REMINDER: Trade-in Value Revised; ACTION REQUIRED Transaction ID: {XXXX}",
+  "BERReInspectedSubject": "Device re-tested; Action Required; Transaction ID: {XXXX}",
+  "ReminderAwaitingLostStolenSubject": "Reminder: Your device has been flagged as Stolen/ Blacklisted - Transaction ID: {XXXX}",
+  "UnresolvedLostStolenSubject": "E-waste initiated - Trade-in device sent for recycling - Transaction ID: {XXXX}",
+  "AutoAcceptSubject": "Trade-in complete; Transaction ID: {XXXX}",
+  "LocationNotificationSubject": "Move Device with Transaction ID - {XXXX}",
+  "LocationNotificationSubjectforPayment": "Move Device to new location",
+  "warehouseWebsiteURL": "http://Sellnet-wh-web.product.veridic.local/"
+}

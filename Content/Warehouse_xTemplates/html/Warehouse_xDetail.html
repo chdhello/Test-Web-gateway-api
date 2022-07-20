@@ -1,0 +1,89 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <!--<link rel="stylesheet" href="{{appBaseUrl}}/css/bootstrap.css">-->
+   
+    <title>Device Information</title>
+</head>
+<body>
+
+<div class="modal modal-blue fade right edge" id="pdfCurrentDetail" >
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div #content class="modal-body box-group slimScroll" id="pdfCurrentPrintDetails">
+                <h3 class="offset-top-0" style="display:inline-block; width:100%; text-align:center; height:40px; border-bottom:1px solid #ddd;">
+                    <span style="float:left; width:40%; text-align:left;">{{Heading}}</span>
+                    <span style="float:left;width:60%; text-align:right;"><img src="{{appBaseUrl}}/img/logo.svg" class="pull-right" style="width: 200px;margin-right:100px;"></span>
+                </h3>
+                <table id="my-table" class="table table-condensed table-striped"  style="width:100%;font-size: 11px;">
+                    <thead>
+                        <tr>
+                            <th style="border-bottom: 2px solid #f4f4f4; font-weight:500; text-align:left; height:30px; vertical-align:middle;font-family:arial; color:#585858; font-weight:600;font-size: 12px;">
+                                Username
+                            </th>
+                            <th style="border-bottom: 2px solid #f4f4f4; font-weight:500; text-align:left; height:30px; vertical-align:middle;font-family:arial; color:#585858; font-weight:600;font-size: 12px;">
+                                Device Name
+                            </th>
+                            <th style="border-bottom: 2px solid #f4f4f4;font-weight:500;text-align:left; height:30px; vertical-align:middle;font-family:arial; color:#585858; font-weight:600;font-size: 12px;">
+                                Type
+                            </th>
+                            <th style="border-bottom: 2px solid #f4f4f4;font-weight:500;text-align:left; height:30px; vertical-align:middle;font-family:arial; color:#585858; font-weight:600;font-size: 12px;">
+                                OS Version
+                            </th>
+
+                            <th style="border-bottom: 2px solid #f4f4f4;font-weight:500;text-align:left; height:30px; vertical-align:middle;font-family:arial; color:#585858; font-weight:600;font-size: 12px;">
+                                IMEI
+                            </th>
+                            <th style="border-bottom: 2px solid #f4f4f4;font-weight:500;text-align:left; height:30px; vertical-align:middle;font-family:arial; color:#585858; font-weight:600;font-size: 12px;">
+                                BatchID
+                            </th>
+                            <th style="border-bottom: 2px solid #f4f4f4;font-weight:500; height:30px;text-align:left; vertical-align:middle;font-family:arial; color:#585858; font-weight:600;font-size: 12px;">
+                                TransactionID
+                            </th>
+                            <th style="border-bottom: 2px solid #f4f4f4; font-weight:500;height:30px;text-align:left; vertical-align:middle;font-family:arial; color:#585858; font-weight:600;font-size: 12px;">
+                                Scanned Date
+                            </th>
+                            <th style="border-bottom: 2px solid #f4f4f4; font-weight:500;height:30px; vertical-align:middle;text-align:left;font-family:arial; color:#585858; font-weight:600;font-size: 12px;">
+                                Wipe Status
+                            </th>
+                            <th style="border-bottom: 2px solid #f4f4f4; font-weight:500;height:30px; vertical-align:middle;text-align:left;font-family:arial; color:#585858; font-weight:600;font-size: 12px;">
+                                Wipe Start Date
+                            </th>
+                            <th style="border-bottom: 2px solid #f4f4f4; font-weight:500;height:30px; vertical-align:middle;text-align:left;font-family:arial; color:#585858; font-weight:600;font-size: 12px;">
+                                Wipe End Date
+                            </th>
+                            <th style="border-bottom: 2px solid #f4f4f4; font-weight:500;height:30px; vertical-align:middle; color:#585858;font-family:arial; text-align:left;font-weight:600;font-size: 12px;">
+                                {{InspectionStatusHeading}}
+                            </th>
+                            <th style="border-bottom: 2px solid #f4f4f4; font-weight:500;height:30px; vertical-align:middle; color:#585858;font-family:arial; text-align:left;font-weight:600;font-size: 12px;">
+                                Inspection Start Date
+                            </th>
+                            <th style="border-bottom: 2px solid #f4f4f4; font-weight:500;height:30px; vertical-align:middle; color:#585858;font-family:arial; text-align:left;font-weight:600;font-size: 12px;">
+                                Inspection End Date
+                            </th>
+                            <th style="border-bottom: 2px solid #f4f4f4; font-weight:500;height:30px; vertical-align:middle; color:#585858;font-family:arial; text-align:left;font-weight:600;font-size: 12px;">
+                                Device Storage
+                            </th>
+                            <th style="border-bottom: 2px solid #f4f4f4; font-weight:500;height:30px; vertical-align:middle; color:#585858;font-family:arial; text-align:left;font-weight:600;font-size: 12px;">
+                                Erase ID
+                            </th>
+                            <th style="border-bottom: 2px solid #f4f4f4; font-weight:500;height:30px; vertical-align:middle; color:#585858;font-family:arial; text-align:left;font-weight:600;font-size: 12px;">
+                                Serial Number
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody >
+                        {{data}}
+                    </tbody>
+
+                </table>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>

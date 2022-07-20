@@ -1,0 +1,137 @@
+﻿<!DOCTYPE html
+          PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <!-- If you delete this tag, the sky will fall on your head -->
+    <meta name="viewport" content="width=device-width" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title></title>
+    <style>
+        .ddd {
+            color: red;
+        }
+    </style>
+</head>
+<body bgcolor="#FFFFFF" style="padding:0;margin:0;">
+    <table cellpadding="0" cellspacing="0" border="0" width="600" style="width: 600px; padding:0;">
+        <tr>
+            <td>
+                <table cellpadding="0" cellspacing="0" border="0" width="100%" style="padding:0">
+
+                    <tr>
+
+                        <td>
+                            <table width="600" cellpadding="0" cellspacing="0" border="0" bgcolor="#FFFFFF" style="padding:0;margin:0;">
+                                <tr>
+                                    <td height="10" colspan="4"></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img src="{{appBaseUrl}}/img_header.png" width="600" height="100" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td height="10" colspan="4"></td>
+                                </tr>
+                            </table>
+
+                            <table width="100%" cellpadding="0" cellspacing="0" border="0" style="color:#000; text-decoration: none; font-family: Arial, sans-serif; font-size: 12px;padding:0;margin:0;">
+                                <tr>
+                                    <td colspan="3" height="15" style="font-size: 10px;"></td>
+                                </tr>
+                                <tr>
+                                    <!-- <td width="10px">&nbsp;</td> -->
+                                    <td>
+                                        <span style="color:#000; text-decoration: none; font-family: Arial, sans-serif; font-size: 12px;padding:0;margin:0;">Hi,</span>
+                                        <p style="color:#000; text-decoration: none; font-family: Arial, sans-serif; font-size: 12px;padding:0;margin:0;line-height:20px;">
+                                            <br />
+                                           Please move the device from old to new location. 
+										  
+                                        </p>
+                                        
+                                        <p style="font-size: 8px; height:10px;padding:0;margin:0;">&nbsp;</p>
+                                        
+                                    </td>
+                                    <td width="10px">&nbsp;</td>
+                                </tr>
+                               
+                            </table>
+                           <table style="padding:0;border-collapse: collapse; max-width: 600px;border:1px solid #ccc;" width="600">
+                                <tr>
+                                    <td colspan="3" height="3" style="font-size: 5px;">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <!--<td width="10px">&nbsp;</td>-->
+                                    <td><b>Order details</b></td>
+                                    <td width="1px">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3" height="5" style="font-size: 1px;">&nbsp;</td>
+                                </tr>
+                            </table>
+						   <table style="padding:0;border-collapse: collapse; max-width: 600px;border:1px solid #ccc;" width="600">
+                                <tbody>
+                                    <tr>
+                                        <td bgcolor="#f0f0f0" style="border-width: 1px;padding: 8px;border-style: solid;border-color: #f0f0f0;width:40%;font-family: Arial, Helvetica, sans-serif;font-size: 12px;">Transaction ID:</td>
+                                        <td style="border-width: 1px;padding: 8px;border-style: solid;border-color: #ececec;width:60%;font-family: Arial, Helvetica, sans-serif;font-size: 12px;">{{OrderDetailID}}</td>
+                                    </tr>
+                                    <tr>
+                                        <td bgcolor="#f0f0f0" style="border-width: 1px;padding: 8px;border-style: solid;border-color: #f0f0f0;font-family: Arial, Helvetica, sans-serif;font-size: 12px;">{{IMEI_SerialnumberHeader}}:</td>
+                                        <td style="border-width: 1px;padding: 8px;border-style: solid;border-color: #ececec;font-family: Arial, Helvetica, sans-serif;font-size: 12px;">{{IMEI_Serialnumber}}</td>
+                                    </tr>
+                                    <tr>
+                                        <td bgcolor="#f0f0f0" style="border-width: 1px;padding: 8px;border-style: solid;border-color: #f0f0f0;font-family: Arial, Helvetica, sans-serif;font-size: 12px;">Old Location:</td>
+                                        <td style="border-width: 1px;padding: 8px;border-style: solid;border-color: #ececec;font-family: Arial, Helvetica, sans-serif;font-size: 12px;"> {{OldLocationStatus}} </td>
+                                    </tr>
+                                    <tr>
+                                        <td bgcolor="#f0f0f0" style="border-width: 1px;padding: 8px;border-style: solid;border-color: #f0f0f0;font-family: Arial, Helvetica, sans-serif;font-size: 12px;">New Location:</td>
+                                        <td style="border-width: 1px;padding: 8px;border-style: solid;border-color: #ececec;font-family: Arial, Helvetica, sans-serif;font-size: 12px;">{{NewLocationStatus}}</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+						  
+                        </td>
+
+                    </tr>
+                </table>
+            </td>
+        </tr>
+       
+    </table>
+
+    
+    <table width="600" bgcolor="#fff" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+            <td colspan="3" height="15">&nbsp;</td>
+        </tr>
+        <tr>
+            <!-- <td width="10px">&nbsp;</td> -->
+            <td style="font-family: Arial, Helvetica, sans-serif; font-size:12px;" width="600"><a href="{{warehouseWebsiteURL}}/printlabel?OrderDetailID={{OrderDetailID}}" target="_blank" style="color: #005BAB; text-decoration: none;font-weight:600;"><u>Click here to print the label</u></a> </td>
+        </tr>
+        <tr>
+            <td colspan="3" height="10" style="font-size: 10px;">&nbsp;</td>
+        </tr>
+       
+    </table>
+  
+  <table cellspacing="0" cellpadding="0" width="600" bgcolor="#ffffff" border="0">
+        <tr>
+            <td colspan="3" height="10" style="font-size:5px;">&nbsp;</td>
+        </tr>
+        <tr>
+            <!-- <td width="10px">&nbsp;</td> -->
+            <td align="left" style="font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #000; line-height: 20px">
+
+             
+            </td>
+            <!-- <td width="10px">&nbsp;</td> -->
+        </tr>
+        <tr>
+            <td colspan="3" height="10" style="font-size:5px;">&nbsp;</td>
+        </tr>
+    </table>
+
+
+    </table>
+</body>
+</html>

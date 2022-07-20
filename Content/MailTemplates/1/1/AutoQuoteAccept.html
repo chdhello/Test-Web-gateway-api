@@ -1,0 +1,254 @@
+﻿<!DOCTYPE html
+          PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <!-- If you delete this tag, the sky will fall on your head -->
+    <meta name="viewport" content="width=device-width" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title></title>
+</head>
+<body bgcolor="#FFFFFF" style="padding:0; margin:0;">
+    <!-- HEADER -->
+    <table cellpadding="0" cellspacing="0" border="0" width="600" style="width: 600px; padding:0;">
+        <tr>
+            <td>
+                <table cellpadding="0" cellspacing="0" border="0" width="600" style="padding:0;">
+
+                    <tr>
+
+                        <td>
+
+
+                            <table width="600" cellpadding="0" cellspacing="0" border="0" bgcolor="#FFFFFF" style="padding:0;margin:0;">
+                                <tr>
+                                    <td height="10" colspan="4"></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img src="{{appBaseUrl}}/img_header.png" width="600" height="100" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td height="10" colspan="4"></td>
+                                </tr>
+                            </table>
+
+                            <table width="600" cellpadding="0" cellspacing="0" border="0" style="color:#333; text-decoration: none; font-family: Arial, sans-serif; font-size: 14px;padding:0;margin:0;">
+                                <tr>
+                                    <td colspan="3" height="15" style="font-size: 10px;"></td>
+                                </tr>
+                                <tr>
+                                    <!--<td width="10px">&nbsp;</td>-->
+                                    <td>
+                                        <span style="color:#000000; text-decoration: none; font-family: Arial, sans-serif; font-size: 12px;padding:0;margin:0;">
+                                            Dear
+                                            {{clientName}},
+                                        </span>
+                                        <p style="font-size: 8px; height:10px;padding:0;margin:0;">&nbsp;</p>
+                                        <!--<p style="color:#000000; text-decoration: none; font-family: Arial, sans-serif; font-size: 12px;padding:0;margin:0;line-height:20px">
+        <br />
+
+        Thank you for joining our trade-In program.
+
+    </p>-->
+                                        <p style="color:#000000; text-decoration: none; font-family: Arial, sans-serif; font-size: 12px;padding:0;margin:0;line-height:20px">
+
+                                            Thank you for participating in our Trade-In program. We are pleased to inform your trade-in has been completed. We are now processing your payment on the basis of the revised offer; since there was no response from you within {{QuoteAutoAcceptDays}} days of the revised value notification, the revised quote amount has been automatically accepted. You will receive your payment within {{QuoteAutoAcceptDays}} days, through the payment method selected during the quote process.
+                                            <!--We have not heard from you within the {{QuoteAutoAcceptDays}} day time frame given as per our T&C's.<br />
+    The revised quote has been automatically accepted.<br />-->
+                                            <!--It's time to <b>scratch that itch</b> and make the <b>switch.</b>-->
+
+                                        </p>
+                                        <p style="font-size: 8px; height:10px;padding:0;margin:0;">&nbsp;</p>
+                                        <!--<b>Let's talk money:</b>-->
+                                        <p style="font-size: 8px; height:10px;padding:0;margin:0;">&nbsp;</p>
+                                        <!--<p style="color:#000000; text-decoration: none; font-family: Arial, sans-serif; font-size: 12px;padding:0;margin:0;line-height:20px">
+
+                                            Your payment is being processed. <br />
+                                            If you selected <b>EFT</b> as your method of payment, please allow 5-7 working days for this to clear in your account.<br />-->
+                                            <!--If you selected a <b>weSwitch voucher</b>, this will be sent to you via SMS within the next working day.-->
+
+                                        <!--</p>-->
+
+                                    </td>
+                                    <td width="10px">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3" height="10" style="font-size: 18px;">&nbsp;</td>
+                                </tr>
+                            </table>
+                            <table style="padding:0;border-collapse: collapse; max-width: 600px;border:1px solid #ccc;" width="600">
+                                <tr>
+                                    <td colspan="3" height="3" style="font-size: 5px;">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <!--<td width="10px">&nbsp;</td>-->
+                                    <td>
+                                        Your order details are:
+                                    </td>
+                                    <td width="10px">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3" height="3" style="font-size: 5px;">&nbsp;</td>
+                                </tr>
+                            </table>
+                            <table style="padding:0;border-collapse: collapse; max-width: 600px;border:1px solid #ccc;" width="600">
+                                <tbody>
+                                    <tr>
+                                        <td bgColor="#f0f0f0" style="border-width: 1px;padding: 8px;color:#808080;border-style: solid;border-color: #f0f0f0;width:40%;font-family: Arial, Helvetica, sans-serif;font-size: 12px;">Transaction ID :</td>
+                                        <td style="padding: 8px; border-right:1px solid #ccc;width:60%;font-family: Arial, Helvetica, sans-serif;font-size: 12px;">{{OrderDetailID}}</td>
+                                    </tr>
+                                    <tr>
+                                        <td bgColor="#f0f0f0" style="border-width: 1px;padding: 8px;color:#808080;border-style: solid;border-color: #f0f0f0;font-family: Arial, Helvetica, sans-serif;font-size: 12px;">Device quoted :</td>
+                                        <td style="padding: 8px; border-right:1px solid #ccc;font-family: Arial, Helvetica, sans-serif;font-size: 12px;">{{Model}}</td>
+                                    </tr>
+                                    <tr>
+                                        <td bgColor="#f0f0f0" style="border-width: 1px;padding: 8px;color:#808080;border-style: solid;border-color: #f0f0f0;font-family: Arial, Helvetica, sans-serif;font-size: 12px;">Quote amount :</td>
+                                        <td style="padding: 8px; border-right:1px solid #ccc;font-family: Arial, Helvetica, sans-serif;font-size: 12px;">{{CurrencySymbol}} {{QuotedPrice}}</td>
+                                    </tr>
+                                    <tr>
+                                        <td bgColor="#f0f0f0" style="border-width: 1px;padding: 8px;color:#808080;border-style: solid;border-color: #f0f0f0;font-family: Arial, Helvetica, sans-serif;font-size: 12px;">Revised quote amount :</td>
+                                        <td style="padding: 8px; border-right:1px solid #ccc;font-family: Arial, Helvetica, sans-serif;font-size: 12px;">{{CurrencySymbol}} {{Inspected}}</td>
+                                    </tr>
+                                    <tr>
+                                        <td bgColor="#f0f0f0" style="border-width: 1px;padding: 8px;color:#808080;border-style: solid;border-color: #f0f0f0;font-family: Arial, Helvetica, sans-serif;font-size: 12px;">Reason :</td>
+                                        <td style="padding: 8px; border-right:1px solid #ccc;font-family: Arial, Helvetica, sans-serif;font-size: 12px;">{{Reason}}</td>
+                                    </tr>
+
+                                </tbody>
+                            </table><br />
+                            <table bgcolor="#fff" cellpadding="0" cellspacing="0" border="0" width="600">
+                                <tr>
+                                    <td colspan="3" height="3" style="font-size: 5px;">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3" height="3" style="font-size: 5px;">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3" height="3" style="font-size: 5px;">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <!--<td width="3px">&nbsp;</td>-->
+                                    <!--<td>
+                                        <b>Tech report:</b>
+                                    </td>-->
+                                    <td width="10px">&nbsp;</td>
+                                </tr>
+                                <!--<tr>
+                                    <td colspan="3" height="3" style="font-size: 5px;">&nbsp;</td>
+                                </tr>-->
+                            </table>
+                            <table width="600" bgcolor="#fff" cellpadding="0" cellspacing="0" border="0">
+                                <!--<tr>
+                                    <td colspan="3" height="15">&nbsp;</td>
+                                </tr>-->
+                                <tr>
+                                  
+                                    <td style="font-family: Arial, Helvetica, sans-serif; font-size: 12px; color:#555555;">Please click <a href="{{WebsiteURL}}/login" target="_blank" style="color: #005BAB; text-decoration: none;font-weight:600;"><u>here</u></a> for further details/images of the faults mentioned above.</td>
+                                    <!--<td width="10px">&nbsp;</td>-->
+                                </tr>
+                                <tr>
+                                    <td colspan="3" height="15">&nbsp;</td>
+                                </tr>
+                            </table>
+                            <table bgcolor="#fff" cellpadding="0" cellspacing="0" border="0" width="600">
+                                <!--<tr>
+                                    <td colspan="3" height="3" style="font-size: 5px;">&nbsp;</td>
+                                </tr>-->
+                                <tr>
+                                    <td colspan="3" height="3" style="font-size: 5px;">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <!--<td width="4px">&nbsp;</td>-->
+                                    <td>
+                                       
+                                    </td>
+                                    <!--<td width="10px">&nbsp;</td>-->
+                                </tr>
+                                <!--<tr>
+                                    <td colspan="3" height="3" style="font-size: 5px;">&nbsp;</td>
+                                </tr>-->
+                            </table>
+
+                            <table width="600" bgcolor="#fff" cellpadding="0" cellspacing="0" border="0">
+                                <!--<tr>
+                                    <td colspan="3" height="15">&nbsp;</td>
+                                </tr>-->
+                                <tr>
+
+                                    <td>
+                                        <p style="color:#000000; text-decoration: none; font-family: Arial, sans-serif; font-size: 12px;padding:0;margin-top:-20px;line-height:20px">
+                                            <br />
+                                            We hope you have enjoyed the trade-in experience with us. If you have any suggestions you would like<br /> to share, or if you feel we could have done better, please feel free to send us an email at  <a href="mailto:{{ContactEmail}}" target="_blank" style="color: #005BAB; text-decoration:none;"><u>{{ContactEmail}}</u></a>.
+                                            <!--We hope you have enjoyed the <b>weFixperience</b> with us.<br />
+
+    We're all about improving and providing our customers with A grade service. If you have any suggestions, or if you feel we could have done better, please send us an email at <a href="mailto:{{ContactEmail}}" target="_blank" style="color: #005BAB; text-decoration:none;"><u>{{ContactEmail}}</u></a>.-->
+                                        </p>
+                                    </td>
+                                    <!--<td width="10px">&nbsp;</td>-->
+                                </tr>
+                                <tr>
+                                    <td colspan="3" height="15">&nbsp;</td>
+                                </tr>
+                            </table>
+                            <table cellspacing="0" cellpadding="0" width="600" bgcolor="#ffffff" border="0">
+                                <!--<tr>
+                                    <td colspan="3" height="3" style="font-size: 5px;">&nbsp;</td>
+                                </tr>-->
+                                <tr>
+
+                                    <!--<td>
+                                        <b>Questions? </b>
+                                    </td>-->
+                                    <!--<td width="10px">&nbsp;</td>-->
+                                </tr>
+                                <!--<tr>
+                                    <td colspan="3" height="3" style="font-size: 5px;">&nbsp;</td>
+                                </tr>-->
+                                <!-- <tr> -->
+                                <!-- <td colspan="3" height="10" style="font-size:5px;">&nbsp;</td> -->
+                                <!-- </tr> -->
+                                <tr>
+                                    <td align="left" style="font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #000; line-height: 20px">
+                                        You can manage your account <a href="{{WebsiteURL}}/login" target="_blank" style="color: #005BAB; text-decoration: none;font-weight:600;"><u>here</u></a> using your email address to login.
+                                    </td>
+                                    <!--<td align="left" style="font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #000; line-height: 20px">
+        If you have further questions about your order you can always contact us by email at <a href="mailto:{{ContactEmail}}" target="_blank" style="color: #005BAB; text-decoration:none;"><u>{{ContactEmail}}</u>  </a>and one of our customer service agents will happily assist you.-->
+                                    <!--or<br /> call us on <a href="" target="_blank" style="color: #005BAB;">0xxxx xxxxx</a><br />-->
+                                    <!--</td>-->
+                                    <td width="10px">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3" height="10" style="font-size:5px;">&nbsp;</td>
+                                </tr>
+                            </table>
+                            <table cellspacing="0" cellpadding="0" width="600" bgcolor="#ffffff" border="0">
+                                <tr>
+                                    <td colspan="3" height="10" style="font-size:5px;">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <!--<td width="3px">&nbsp;</td>-->
+                                    <td align="left" style="font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #000; line-height: 20px">
+                                        Yours sincerely,<br />
+                                        SELLNET
+
+                                     
+                                    </td>
+                                    <td width="10px">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3" height="10" style="font-size:5px;">&nbsp;</td>
+                                </tr>
+                            </table>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td colspan="3" height="10">&nbsp;</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

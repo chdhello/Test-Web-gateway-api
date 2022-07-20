@@ -1,0 +1,288 @@
+﻿<!DOCTYPE html
+          PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <!-- If you delete this tag, the sky will fall on your head -->
+    <meta name="viewport" content="width=device-width" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title></title>
+</head>
+<body bgcolor="#FFFFFF">
+    <table cellpadding="0" cellspacing="0" border="0" width="600" style="width: 600px; padding:0;">
+        <tr>
+            <td>
+                <table width="600" cellpadding="0" cellspacing="0" border="0" bgcolor="#FFFFFF" style="padding:0;margin:0;">
+                    <tr>
+                        <td height="10" colspan="4"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="{{appBaseUrl}}/img_header.png" width="600" height="100" />
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td height="10" colspan="4"></td>
+        </tr>
+    </table>
+    <table width="600" cellpadding="0" cellspacing="0" border="0" style="color:#333; text-decoration: none; font-family: Arial, sans-serif; font-size: 14px;padding:0;margin:0;">
+        <tr>
+            <td colspan="3" height="15" style="font-size: 10px;"></td>
+        </tr>
+        <tr>
+            <!--<td width="10px">&nbsp;</td>-->
+            <td>
+                <span style="color:#000000; text-decoration: none; font-family: Arial, sans-serif; font-size: 12px;padding:0;margin:0;">Dear {{Name}},</span>
+                <p style="color:#000000; text-decoration: none; font-family: Arial, sans-serif; font-size: 12px;padding:0;margin:0;line-height:20px">
+                    <br />
+                    You recently decided to trade-in your device with SELLNET, however, we have not received it yet.
+                    <!--You recently decided to trade-in your device with weFix, however, we have not yet received it.-->
+
+                </p>
+                <p style="font-size: 8px; height:10px;padding:0;margin:0;">&nbsp;</p>
+                <p style="color:#000000; text-decoration: none; font-family: Arial, sans-serif; font-size: 12px;padding:0;margin:0;line-height:20px">
+                    <!--If you have recently sent the device, you can expect an email update shortly.  If you haven't had a chance to drop it off at your nearest weFix store, please note that the quoted value will only be valid for another  {{x}} after which the value may change.<br />-->
+                    <!--Find a weFix store near you - <a href="https://wefixshop.co.za/pages/store-locator" style="color: #005BAB;font-weight:600; text-decoration: none;"><u>Store Locator.</u></a>-->
+                    If you have recently sent the device, then we are about to receive and process it. You can expect an email update shortly. However, if you haven't sent it yet, please note that the quoted value will only be valid for another {{x}} days, after which the value may decrease.<br />
+                </p>
+                <p style="color:#000000; text-decoration: none; font-family: Arial, sans-serif; font-size: 12px;padding:0;margin:0;line-height:20px">
+                 <br />   If you need any help in sending your device, please <a href="mailto:{{ContactEmail}}" target="_blank" style="color: #005BAB;font-weight:600; text-decoration: none;"><u>contact us</u></a> , or see our FAQs page <a href="{{FAQURL}}" target="_blank" style="color: #005BAB;font-weight:600; text-decoration: none;"><u>here</u></a> .
+                               
+                </p>
+            </td>
+            <!--<td width="10px">&nbsp;</td>-->
+        </tr>
+        <tr>
+            <td colspan="3" height="10" style="font-size: 18px;">&nbsp;</td>
+        </tr>
+    </table>
+    <table style="padding:0;border-collapse: collapse; max-width: 600px;border:1px solid #ccc;" width="600">
+        <tr>
+            <td colspan="3" height="3" style="font-size: 5px;">&nbsp;</td>
+        </tr>
+        <tr>
+            <!--<td width="10px">&nbsp;</td>-->
+            <td>
+                Your order details are:
+
+            </td>
+            <!--<td width="10px">&nbsp;</td>-->
+        </tr>
+        <tr>
+            <td colspan="3" height="3" style="font-size: 5px;">&nbsp;</td>
+        </tr>
+    </table>
+
+    <table style="padding:0;border-collapse: collapse; max-width: 600px;border:1px solid #ccc;" width="600">
+        <tbody>
+            <tr>
+                <td bgcolor="#f0f0f0" style="border-width: 1px;padding: 8px;color:#808080;border-style: solid;border-color: #f0f0f0;width:40%;font-family: Arial, Helvetica, sans-serif;font-size: 12px;">Transaction ID :</td>
+                <td style="padding: 8px; border-right:1px solid #ccc;width:60%;font-family: Arial, Helvetica, sans-serif;font-size: 12px;">{{OrderDetailID}}</td>
+            </tr>
+            <tr>
+                <td bgcolor="#f0f0f0" style="border-width: 1px;padding: 8px;color:#808080;border-style: solid;border-color: #f0f0f0;font-family: Arial, Helvetica, sans-serif;font-size: 12px;">Device quoted :</td>
+                <td style="padding: 8px; border-right:1px solid #ccc;font-family: Arial, Helvetica, sans-serif;font-size: 12px;">{{DeviceQuoted}}</td>
+            </tr>
+            <tr>
+                <td bgcolor="#f0f0f0" style="border-width: 1px;padding: 8px;color:#808080;border-style: solid;border-color: #f0f0f0;font-family: Arial, Helvetica, sans-serif;font-size: 12px;">Quote amount :</td>
+                <td style="padding: 8px; border-right:1px solid #ccc;font-family: Arial, Helvetica, sans-serif;font-size: 12px;">{{CurrencySymbol}} {{QuotedPrice}} <i style="font-family: Arial, Helvetica, sans-serif;font-size: 11px;color:#999999;">* Subject to quality verification at our warehouse</i></td>
+            </tr>
+            <tr>
+                <td bgcolor="#f0f0f0" style="border-width: 1px;padding: 8px;color:#808080;border-style: solid;border-color: #f0f0f0;;font-family: Arial, Helvetica, sans-serif;font-size: 12px;">Valid up to :</td>
+                <td style="padding: 8px; border-right:1px solid #ccc;font-family: Arial, Helvetica, sans-serif;font-size: 12px;"> {{ValidUpto}}</td>
+            </tr>
+        </tbody>
+    </table><br />
+
+    <table bgcolor="#fff" cellpadding="0" cellspacing="0" border="0" width="600">
+        <tr>
+            <td colspan="3" height="3" style="font-size: 5px;">&nbsp;</td>
+        </tr>
+        <tr>
+            <td colspan="3" height="3" style="font-size: 5px;">&nbsp;</td>
+        </tr>
+        <tr>
+            <!--<td width="10px">&nbsp;</td><br/>-->
+                                        <td style="font-family: Arial, Helvetica, sans-serif; font-size: 12px; color:#000;">
+                                          <br />SHIPPING INSTRUCTIONS:Please use the prepaid label provided in our order confirmation email to ship your device to us. If you have chosen a free return kit, and haven't received it yet, you can request it again by logging in to your SELLNET account. Kindly pack your device carefully to avoid any damage in transit.
+                                            <!--Please package your device in bubble wrap or protective wrapping and then package it securely in a box to avoid any damage in transit. If you have the original box it came in, this is always best for protection.
+                                            <br/>
+                                           <b>NB:</b>Please ensure you use reference number {{OrderDetailID}} on the waybill when the courier comes to collect.<br/>
+    Use reference # {{OrderDetailID}} to track the status of your device once collected by-->
+                                            <!--<a href="https://thecourierguy.pperfect.com/" target="_blank" style="color: #005BAB; text-decoration: none;font-weight:600;"><u>clicking here.</u></a>-->
+                                        </td>
+        </tr>
+
+    </table>
+    <table width="600" bgcolor="#fff" cellpadding="0" cellspacing="0" border="0">
+        <!--<tr>
+            <td height="15">&nbsp;</td>
+        </tr>-->
+        <tr>
+            <!--<td width="10px">&nbsp;</td>-->
+            <td>
+                <br />
+                Don’t forget to
+            </td>
+            <!--<td width="10px">&nbsp;</td>-->
+        </tr>
+        <!--<tr>
+            <td colspan="3" height="3" style="font-size: 5px;">&nbsp;</td>
+        </tr>-->
+        <tr>
+            <!--<td width="10px">&nbsp;</td>-->
+            <td>
+                <!--<table border="0" cellpadding="0" cellspacing="0" width="600" style="line-height:20px;">
+        <tr>
+            <td width="18"><img src="{{appBaseUrl}}/icon-check.png" alt="" height="18" width="18" /></td>
+            <td width="5"></td>
+            <td style="text-decoration: none; font-family: Arial, sans-serif; font-size: 12px; color:#000000;">Remove sim card</td>
+        </tr>
+        <tr style="display:{{DisplayMemoryCard}}">
+            <td width="18"><img src="{{appBaseUrl}}/icon-check.png" alt="" height="18" width="18" /></td>
+            <td width="5"></td>
+            <td style="text-decoration: none; font-family: Arial, sans-serif; font-size: 12px; color:#000000;">Remove memory card</td>
+        </tr>
+        <tr>
+            <td width="18"><img src="{{appBaseUrl}}/icon-check.png" alt="" height="18" width="18" /></td>
+            <td width="5"></td>
+            <td style="text-decoration: none; font-family: Arial, sans-serif; font-size: 12px; color:#000000;">Restore device to factory settings and log out of your accounts</td>
+        </tr>
+        <tr style="display:{{IsFMIPDisplay}}">
+            <td width="18"><img src="{{appBaseUrl}}/icon-check.png" alt="" height="18" width="18" /></td>
+            <td width="5"></td>
+            <td style="text-decoration: none; font-family: Arial, sans-serif; font-size: 12px; color:#000000;">Turn off Find My iPhone (FMIP) – <a href="{{FMIPLockURL}}" target="_blank" style="color: #ff787c;font-weight:600; text-decoration: none;">How to turn it off?</a></td>
+        </tr>
+        <tr>
+            <td width="18"><img src="{{appBaseUrl}}/icon-check.png" alt="" height="18" width="18" /></td>
+            <td width="5"></td>
+            <td style="text-decoration: none; font-family: Arial, sans-serif; font-size: 12px; color:#000000;">Remove any other PIN and pattern lock from your phone</td>
+        </tr>
+
+    </table>-->
+                <ul style="list-style-type:none;margin-left:-40px;margin-top:2px;  font-family: Arial, Helvetica, sans-serif; font-size:12px;">
+                    <!--<li>&#10003 Backup your data - Your device will be wiped when we receive it.</li>-->
+                    <li>&#10003 Remove sim card</li>
+                    <li>&#10003 Remove memory card</li>
+                    <li>&#10003 Restore device to factory settings and log out of your accounts</li>
+                    <li>&#10003 Turn off Find My iPhone (FMIP) – <a href="{{FMIPLockURL}}" target="_blank" style="color: #005BAB;font-weight:600; text-decoration: none;"><u>How to turn it off?</u></a></li>
+                    <li>&#10003 Remove any other PIN and pattern lock from your phone</li></p>
+                </ul>
+            </td>
+            <!--<td width="10px">&nbsp;</td>-->
+        </tr>
+        <tr>
+            <td colspan="3" height="15">&nbsp;</td>
+        </tr>
+    </table>
+    <!-- <table cellspacing="0" cellpadding="0" width="600" bgcolor="#FFFFFF" style="border-bottom: 1px dashed #ccc; border-top: 1px dashed #ccc;"> -->
+    <!-- <tr> -->
+    <!-- <td colspan="3" height="15" style="font-size:5px;">&nbsp;</td> -->
+    <!-- </tr> -->
+    <!-- <tr> -->
+    <!-- <td width="10">&nbsp;</td> -->
+    <!-- <td style="font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #000000; line-height:20px;">Please know that if your device is received after the quote expiration date (mentioned above), the device value will be recalculated and may differ from the original quote value. Click to see the <a href="{{TermConditionUrl}}" target="_blank" style="color:#005BAB; text-decoration:underline;">Terms and Conditions</a> of the Trade-In Program.</td> -->
+    <!-- <td width="10">&nbsp;</td> -->
+    <!-- </tr> -->
+    <!-- <tr> -->
+    <!-- <td colspan="3" height="15" style="font-size:5px;">&nbsp;</td> -->
+    <!-- </tr> -->
+    <!-- </table> -->
+    <table bgcolor="#fff" cellpadding="0" cellspacing="0" border="0" width="600">
+        <tr>
+            <td colspan="3" height="3" style="font-size: 5px;">&nbsp;</td>
+        </tr>
+
+        <tr>
+         <!--<td width="6px">&nbsp;</td>-->
+            <!--<td>
+                <b>What's the status of my apparatus? </b>
+            </td>-->
+            <!--<td width="10px">&nbsp;</td>-->
+        </tr>
+        <tr>
+            <td colspan="3" height="3" style="font-size: 5px;">&nbsp;</td>
+        </tr>
+    </table>
+    <table width="600" bgcolor="#fff" cellpadding="0" cellspacing="0" border="0">
+        <!--<tr>
+            <td colspan="3" height="15">&nbsp;</td>
+        </tr>-->
+        <tr>
+            <!--<td width="10px">&nbsp;</td>-->
+            <td style="font-family: Arial, Helvetica, sans-serif; font-size:12px;" width="600">You can track the status of your order from <a href="{{WebsiteURL}}/login" target="_blank" style="color: #005BAB; text-decoration: none;font-weight:600;"><u>here</u></a> using your email address to login.</td>
+        </tr>
+        <tr>
+            <td colspan="3" height="10" style="font-size: 10px;">&nbsp;</td>
+        </tr>
+        <!--<tr>
+            <td width="10px">&nbsp;</td>-->
+        <!--<td>
+            <table cellpadding="0" cellspacing="0" border="0" bgcolor="#ffffff" style="min-width:70%;">
+                <tr>
+                    <td nowrap="nowrap" style="font-family: Arial, Helvetica, sans-serif; font-size: 12px;color: #000;" width="60">Username:</td>
+                    <td width="10">&nbsp;</td>
+                    <td nowrap="nowrap" style="font-family: Arial, Helvetica, sans-serif; font-size: 12px;color: #000;">{{UserName}}</td>
+                </tr>
+                <tr>
+                    <td colspan="3" height="10" style="font-size: 8px;">&nbsp;</td>
+                </tr>
+            </table>
+        </td>-->
+        <!--<td width="10px">&nbsp;</td>
+            <td>
+                Questions?
+            </td>
+            <td width="10px">&nbsp;</td>
+            <td width="10px">&nbsp;</td>
+        </tr>-->
+        <!--<tr>
+            <td colspan="3" height="15">&nbsp;</td>
+        </tr>-->
+    </table>
+    <table cellspacing="0" cellpadding="0" width="600" bgcolor="#ffffff" border="0">
+        <tr>
+            <!--<td width="1px">&nbsp;</td>-->
+            <!--<td>
+                <b>Questions?</b>
+            </td>-->
+            <!--<td width="10px">&nbsp;</td>-->
+        </tr>
+        <!--<tr>
+            <td colspan="3" height="10" style="font-size:5px;">&nbsp;</td>
+        </tr>-->
+
+        <tr>
+            <!--<td width="10px">&nbsp;</td>-->
+            <td align="left" style="font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #000; line-height: 20px">
+                If you have further questions about your order you can always contact us by email at <a href="mailto:{{ContactEmail}}" target="_blank" style="font-family: Arial, Helvetica, sans-serif; font-size: 12px;color: #005BAB;text-decoration:none;"><u>{{ContactEmail}}</u></a>
+                <!--or<br /> call us on <a href="" target="_blank" style="color: #005BAB;">0xxxx xxxxx</a><br />-->
+            </td>
+            <!--<td width="10px">&nbsp;</td>-->
+        </tr>
+        <tr>
+            <td colspan="3" height="10" style="font-size:5px;">&nbsp;</td>
+        </tr>
+    </table>
+    <table cellspacing="0" cellpadding="0" width="600" bgcolor="#ffffff" border="0">
+        <tr>
+            <td colspan="3" height="10" style="font-size:5px;">&nbsp;</td>
+        </tr>
+        <tr>
+            <!--<td width="6px">&nbsp;</td>-->
+            <td align="left" style="font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #000; line-height: 20px">
+                Yours sincerely,<br />
+                SELLNET
+
+            </td>
+            <!--<td width="10px">&nbsp;</td>-->
+        </tr>
+        <tr>
+            <td colspan="3" height="10" style="font-size:5px;">&nbsp;</td>
+        </tr>
+    </table>
+
+</body>
+</html>

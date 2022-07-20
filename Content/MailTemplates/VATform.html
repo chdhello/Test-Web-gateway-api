@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+
+        @media print {
+            body, page {
+                margin: 0;
+                box-shadow: 0;
+            }
+
+            page {
+                background: white;
+                display: block;
+                margin: 0 auto;
+                position: relative;
+                /*margin-bottom: 0.3cm;*/
+            }
+
+                page[size="A4"] {
+                    width: 21cm;
+                    /*height: 29.7cm;*/
+                }
+
+            header {
+                border-bottom: none;
+                padding: 0.3cm 0.3cm 0cm 0.3cm;
+            }
+
+            section {
+                padding: 0.2cm 0.3cm 0cm 0.3cm;
+            }
+
+                section .table td, section .table th {
+                    border-bottom: 1px solid #dddddd;
+                    padding: 10px;
+                }
+
+                section .table tfoot td {
+                    border: none;
+                }
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: rgb(204,204,204);
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 14px;
+        }
+
+        page {
+            background: white;
+            display: block;
+            margin: 0 auto;
+            position: relative;
+            /*margin-bottom: 0.3cm;*/
+        }
+
+            page[size="A4"] {
+                width: 21cm;
+                /*height: 29.7cm;*/
+            }
+
+        header {
+            border-bottom: none;
+            padding: 0.3cm 0.3cm 0cm 0.3cm;
+        }
+
+        section {
+            padding: 0.2cm 0.3cm 0cm 0.3cm;
+        }
+
+            section .table td, section .table th {
+                border-bottom: 1px solid #dddddd;
+                padding: 10px;
+            }
+
+            section .table tfoot td {
+                border: none;
+            }
+
+    .box-display { background-image: url("{{appBaseUrl}}/square.gif"); /*url("square.gif");*/ /*height: 20pt;*/ background-size: 18px; border: none; font-family: monospace; font-size: 13px; letter-spacing: 1pt; padding-left: 2px; }
+    </style>
+</head>
+<body>
+    <page size="A4">
+        <header style="background: #FFFFFF;">
+            <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                <tr>
+                    <td width="120"><img src="{{appBaseUrl}}/logo.png" width="100"></td>
+                    <td align="left">
+                        <span style="font-family: Arial, Helvetica, sans-serif; font-size: 12pt; display: block;">VALUE-ADDED TAX</span>
+                        <span style="font-family: Arial, Helvetica, sans-serif; font-size: 9pt; display: block; border-top:1px solid #000;">Declaration for the supply of second-hand, repossessed or surrendered goods</span>
+                    </td>
+                    <td width="10"></td>
+                    <td width="80">
+                        <span style="font-family: Arial, Helvetica, sans-serif; font-size: 10pt; display:block; background: #D4CFC7; border: 1px solid #010202; text-align:center;padding: 3px;">Print Form</span>
+                        <span style="font-family: Arial, Helvetica, sans-serif; font-size: 10pt; display:block; background: #0A4A7C; border: 1px solid #010202; color: #FFFFFF; text-align:center; padding: 3px; margin-top:2px;">VAT264</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="100%" height="5"></td>
+                </tr>
+            </table>
+            <p style="font-size:7pt; font-family: Arial, Helvetica, sans-serif; color:#010202; padding:0 0 6px 0;">To be used for registrable and non-registrable goods.</p>
+            <p style="font-size:7pt; font-family: Arial, Helvetica, sans-serif; color:#010202; padding:0 0 6px 0;">A vendor deducting notional input tax on moveable second-hand, repossessed or surrendered goods must ensure that all the information required in terms of section 20(8) of the Value-Added Tax Act, No. 89 of 1991 (VAT Act), is furnished by the owner supplying the goods, and must be attached to this declaration.</p>
+            <p style="font-size:7pt; font-family: Arial, Helvetica, sans-serif; color:#010202">This declaration as well as the relevant attachments must be retained by the vendor deducting notional input tax.</p>
+        </header>
+        <section>
+            <table cellspacing="0" cellpadding="0" border="0">
+                <tr>
+                    <td width="430">
+                        <h1 style="font-family: Arial, Helvetica, sans-serif; font-size: 8pt; font-weight: bold; background:#0A4A7C; color: #FFFFFF; padding: 5px 8px; border-radius: 5px;">Section 1 - Details of Owner</h1>
+                    </td>
+                    <td align="right" width="430">
+                        <span style="font-family: Arial, Helvetica, sans-serif; font-size:7pt; display: inline-block; padding: 0 10px;">Individual &nbsp;<input type="text" style="border:1px solid #010202; width:14pt; height:17px;" value="X" /></span>
+                        <span style="font-family: Arial, Helvetica, sans-serif; font-size:7pt; display: inline-block;">Company/Close Corporation/Trust/Fund &nbsp;<input type="text" style="border:1px solid #010202; width:17px; height:14pt;" /></span>
+                    </td>
+                </tr>
+            </table>
+            <table cellpadding="0" cellspacing="0" border="0" width="771">
+                <tr>
+                    <td colspan="100%" height="4"></td>
+                </tr>
+                <tr>
+                    <td width="10" valign="top" style="font-family: Arial, Helvetica, sans-serif; font-size: 7pt">1.1</td>
+                    <td width="5"></td>
+                    <td width="67" valign="top" style="font-family: Arial, Helvetica, sans-serif; font-size: 7pt">Name of  owner  supplying  the goods</td>
+                    <td valign="top" align="right">
+
+                        <!--<input type="text" style="border:1px solid #010202;width: 700px;" class="box-display" value="{{FirstName}}" />-->
+                        <!--<input type="text" style="border: 1px solid #010202; width:17px; height:17px;" value="S"/><input type="text" style="border: 1px solid #010202; width:17px; height:17px;" value="a"/><input type="text" style="border: 1px solid #010202; width:17px; height:17px;" value="u"/><input type="text" style="border: 1px solid #010202; width:17px; height:17px;" value="r"/><input type="text" style="border: 1px solid #010202; width:17px; height:17px;" value="a"/><input type="text" style="border: 1px solid #010202; width:17px; height:17px;" value="b"/><input type="text" style="border: 1px solid #010202; width:17px; height:17px;" value="h"/><input type="text" style="border: 1px solid #010202; width:17px; height:17px;" value=" "/><input type="text" style="border: 1px solid #010202; width:17px; height:17px;" value="S"/><input type="text" style="border: 1px solid #010202; width:17px; height:17px;" value="i"/><input type="text" style="border: 1px solid #010202; width:17px; height:17px;" value="n"/><input type="text" style="border: 1px solid #010202; width:17px; height:17px;" value="g"/><input type="text" style="border: 1px solid #010202; width:17px; height:17px;" value="h"/><input type="text" style="border: 1px solid #010202; width:17px; height:17px;"/><input type="text" style="border: 1px solid #010202; width:17px; height:17px;"/><input type="text" style="border: 1px solid #010202; width:17px; height:17px;"/><input type="text" style="border: 1px solid #010202; width:17px; height:17px;"/><input type="text" style="border: 1px solid #010202; width:17px; height:17px;"/><input type="text" style="border: 1px solid #010202; width:17px; height:17px;"/><input type="text" style="border: 1px solid #010202; width:17px; height:17px;"/><input type="text" style="border: 1px solid #010202; width:17px; height:17px;"/><input type="text" style="border: 1px solid #010202; width:17px; height:17px;"/><input type="text" style="border: 1px solid #010202; width:17px; height:17px;"/><input type="text" style="border: 1px solid #010202; width:17px; height:17px;"/><input type="text" style="border: 1px solid #010202; width:17px; height:17px;"/><input type="text" style="border: 1px solid #010202; width:17px; height:17px;"/><input type="text" style="border: 1px solid #010202; width:17px; height:17px;"/><input type="text" style="border: 1px solid #010202; width:17px; height:17px;"/><input type="text" style="border: 1px solid #010202; width:17px; height:17px;"/><input type="text" style="border: 1px solid #010202; width:17px; height:17px;"/><input type="text" style="border: 1px solid #010202; width:17px; height:17px;"/><input type="text" style="border: 1px solid #010202; width:17px; height:17px;"/><input type="text" style="border: 1px solid #010202; width:17px; height:17px;"/><input type="text" style="border: 1px solid #010202; width:17px; height:17px;"/><input type="text" style="border: 1px solid #010202; width:17px; height:17px;"/>-->
+                        {{FNametxtBox}}
+                        <div style="padding-top: 3px;">
+                            <!--<input type="text" style="border:1px solid #010202;width: 700px;" class="box-display" value="" />-->
+                            <!--<input type="text" style="border: 1px solid #010202; width:17px; height:17px;" /><input type="text" style="border: 1px solid #010202; width:17px; height:17px;" /><input type="text" style="border: 1px solid #010202; width:17px; height:17px;" /><input type="text" style="border: 1px solid #010202; width:17px; height:17px;" /><input type="text" style="border: 1px solid #010202; width:17px; height:17px;" /><input type="text" style="border: 1px solid #010202; width:17px; height:17px;" /><input type="text" style="border: 1px solid #010202; width:17px; height:17px;" /><input type="text" style="border: 1px solid #010202; width:17px; height:17px;" /><input type="text" style="border: 1px solid #010202; width:17px; height:17px;" /><input type="text" style="border: 1px solid #010202; width:17px; height:17px;" /><input type="text" style="border: 1px solid #010202; width:17px; height:17px;" /><input type="text" style="border: 1px solid #010202; width:17px; height:17px;" /><input type="text" style="border: 1px solid #010202; width:17px; height:17px;" /><input type="text" style="border: 1px solid #010202; width:17px; height:17px;" /><input type="text" style="border: 1px solid #010202; width:17px; height:17px;" /><input type="text" style="border: 1px solid #010202; width:17px; height:17px;" /><input type="text" style="border: 1px solid #010202; width:17px; height:17px;" /><input type="text" style="border: 1px solid #010202; width:17px; height:17px;" /><input type="text" style="border: 1px solid #010202; width:17px; height:17px;" /><input type="text" style="border: 1px solid #010202; width:17px; height:17px;" /><input type="text" style="border: 1px solid #010202; width:17px; height:17px;" /><input type="text" style="border: 1px solid #010202; width:17px; height:17px;" /><input type="text" style="border: 1px solid #010202; width:17px; height:17px;" /><input type="text" style="border: 1px solid #010202; width:17px; height:17px;" /><input type="text" style="border: 1px solid #010202; width:17px; height:17px;" /><input type="text" style="border: 1px solid #010202; width:17px; height:17px;" /><input type="text" style="border: 1px solid #010202; width:17px; height:17px;" /><input type="text" style="border: 1px solid #010202; width:17px; height:17px;" /><input type="text" style="border: 1px solid #010202; width:17px; height:17px;" /><input type="text" style="border: 1px solid #010202; width:17px; height:17px;" /><input type="text" style="border: 1px solid #010202; width:17px; height:17px;" /><input type="text" style="border: 1px solid #010202; width:17px; height:17px;" /><input type="text" style="border: 1px solid #010202; width:17px; height:17px;" /><input type="text" style="border: 1px solid #010202; width:17px; height:17px;" /><input type="text" style="border: 1px solid #010202; width:17px; height:17px;" />-->
+                            {{LNametxtBox}}
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                <tr>
+                    <td colspan="100%" height="4"></td>
+                </tr>
+                <tr>
+                    <td width="10" style="font-family: Arial, Helvetica, sans-serif; font-size: 7pt">1.2</td>
+                    <td width="5"></td>
+                    <td width="459" style="font-family: Arial, Helvetica, sans-serif; font-size: 7pt">Identity number of owner (if individual)</td>
+                    <td valign="top" align="right">
+                        <!--<input type="text" style="border:1px solid #010202;width: 300px;" class="box-display" value="<input type='text' style='border: 1px solid #010202; width:17px; height:17px;' value='1'/><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' value='2'/><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' value='3'/><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' value='1'/><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' value='2'/><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' value='3'/><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' value='1'/><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' value='3'/><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' value='1'/><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' value='2'/><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' value='3'/><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' value='1'/><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' value='1'/>" />-->
+                        {{IDnumber}}<input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" />
+
+                        <!--<input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" />-->
+                    </td>
+                </tr>
+            </table>
+            <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                <tr>
+                    <td colspan="100%" height="4"></td>
+                </tr>
+                <tr>
+                    <td width="10" style="font-family: Arial, Helvetica, sans-serif; font-size: 7pt">1.3</td>
+                    <td width="5"></td>
+                    <td width="459" style="font-family: Arial, Helvetica, sans-serif; font-size: 7pt">Registration number of Company/Close Corporation/Trust/Fund</td>
+                    <td align="right">
+                        <input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" />
+                    </td>
+                </tr>
+            </table>
+            <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                <tr>
+                    <td colspan="100%" height="4"></td>
+                </tr>
+                <tr>
+                    <td width="10" style="font-family: Arial, Helvetica, sans-serif; font-size: 7pt">1.4</td>
+                    <td width="5"></td>
+                    <td width="422" style="font-family: Arial, Helvetica, sans-serif; font-size: 7pt">Address of owner</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td width="10" style="font-family: Arial, Helvetica, sans-serif; font-size: 7pt"></td>
+                    <td width="5"></td>
+                    <td colspan="2">
+                        <table cellpadding="0" cellspacing="0" border='0' width="100%">
+                            <tr>
+                                <td colspan="100%" height="4"></td>
+                            </tr>
+                            <tr>
+                                <td width="80" style="font-family: Arial, Helvetica, sans-serif; font-size: 7pt">Unit no.</td>
+                                <td width="110">
+                                    <input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" />
+                                </td>
+                                <td width="50" style="font-family: Arial, Helvetica, sans-serif; font-size: 7pt">Complex <br>(if applicable)</td>
+                                <td align="right">
+                                    <input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="100%" height="4"></td>
+                            </tr>
+                            <tr>
+                                <td width="80" style="font-family: Arial, Helvetica, sans-serif; font-size: 7pt">Street no.</td>
+                                <td>
+                                    <!--<input type="text" style="border:1px solid #010202;width: 100px;" class="box-display" value="<input type='text' style='border: 1px solid #010202; width:17px; height:17px;' value='4'/><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' value='0'/><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' value='5'/><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' value='3'/><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' />" />-->
+                                    <!--<input type='text' style='border: 1px solid #010202; width:17px; height:17px;' value='4'/><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' value='0'/><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' value='5'/><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' value='3'/><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' />-->
+                                    {{PlaceNumber}}
+                                </td>
+                                <td width="50" style="font-family: Arial, Helvetica, sans-serif; font-size: 7pt">Street/ Name of farm</td>
+                                <td align="right">
+                                    <!--<input type="text" style="border:1px solid #010202;width: 500px;" class="box-display" value="<input type='text' style='border: 1px solid #010202; width:17px; height:17px;' value='a'/><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' value='d'/><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' value='d'/><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' value='1'/><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' />" />-->
+                                    <!--<input type='text' style='border: 1px solid #010202; width:17px; height:17px;' value='a'/><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' value='d'/><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' value='d'/><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' value='1'/><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' />-->
+                                    {{Address1}}
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="100%" height="4"></td>
+                            </tr>
+                            <tr>
+                                <td width="40" style="font-family: Arial, Helvetica, sans-serif; font-size: 7pt">Suburb/ <br>District</td>
+                                <td colspan="3" align="left">
+                                    <!--<input type="text" style="border:1px solid #010202;width: 670px;" class="box-display" value="<input type='text' style='border: 1px solid #010202; width:17px; height:17px;' value='a'/><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' value='d'/><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' value='d'/><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' value=' '/><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' value='3'/><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' value=' '/><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' value='V'/><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' value='I'/><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' value='C'/><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' />" />-->
+                                    <!--<input type='text' style='border: 1px solid #010202; width:17px; height:17px;' value='a'/><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' value='d'/><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' value='d'/><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' value=' '/><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' value='3'/><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' value=' '/><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' value='V'/><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' value='I'/><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' value='C'/><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' />-->
+                                    {{Suburb}}
+                                </td>
+                            </tr>
+
+                        </table>
+                        <table cellpadding="0" cellspacing="0" border='0' width="100%">
+                            <tr>
+                                <td colspan="100%" height="4"></td>
+                            </tr>
+                            <tr>
+                                <td width="80" style="font-family: Arial, Helvetica, sans-serif; font-size: 7pt">City/Town</td>
+                                <td>
+                                    <!--<input type="text" style="border:1px solid #010202;width: 460px;" class="box-display" value="<input type='text' style='border: 1px solid #010202; width:17px; height:17px;' value='M'/><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' value='e'/><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' value='l'/><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' value='b'/><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' value='o'/><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' value='u'/><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' value='r'/><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' value='n'/><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' value='e'/><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' />" />-->
+                                    <!--<input type='text' style='border: 1px solid #010202; width:17px; height:17px;' value='M'/><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' value='e'/><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' value='l'/><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' value='b'/><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' value='o'/><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' value='u'/><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' value='r'/><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' value='n'/><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' value='e'/><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' />-->
+                                    {{City}}
+                                </td>
+                                <td width="17"></td>
+                                <td width="52" style="font-family: Arial, Helvetica, sans-serif; font-size: 7pt">Postal Code</td>
+                                <td align="right">
+                                    <!--<input type="text" style="border:1px solid #010202;width: 70px;" class="box-display" value="<input type='text' style='border: 1px solid #010202; width:17px; height:17px;' value='6'/><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' value='5'/><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' value='2'/><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' value='5'/>" />-->
+                                    <!--<input type='text' style='border: 1px solid #010202; width:17px; height:17px;' value='6'/><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' value='5'/><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' value='2'/><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' value='5'/>-->
+                                    {{PostalCode}}
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="100%" height="4"></td>
+                </tr>
+                <tr>
+                    <td width="10" style="font-family: Arial, Helvetica, sans-serif; font-size: 7pt">1.5</td>
+                    <td width="5"></td>
+                    <td colspan="2">
+                        <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                            <tr>
+                                <td width="665" style="font-family: Arial, Helvetica, sans-serif; font-size: 7pt">Is a photocopy of the identity document of owner attached? (If individual)</td>
+                                <td align="right">Y <input type="text" style="border:1px solid #010202; width:17px; height:17px;" value="X" /> &nbsp; N <input type="text" style="border:1px solid #010202; width:17px; height:17px;" /></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="100%" height="4"></td>
+                </tr>
+                <tr>
+                    <td width="10" style="font-family: Arial, Helvetica, sans-serif; font-size: 7pt">1.6</td>
+                    <td width="5"></td>
+                    <td colspan="2">
+                        <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                            <tr>
+                                <td width="665" style="font-family: Arial, Helvetica, sans-serif; font-size: 7pt">Is a photocopy of the letterhead or other official document of the Company/Close Corporation/Trust/Fund attached?</td>
+                                <td align="right">Y <input type="text" style="border:1px solid #010202; width:17px; height:17px;" /> &nbsp; N <input type="text" style="border:1px solid #010202; width:17px; height:17px;" /></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="100%" height="4"></td>
+                </tr>
+                <tr>
+                    <td width="10" style="font-family: Arial, Helvetica, sans-serif; font-size: 7pt">1.7</td>
+                    <td width="5"></td>
+                    <td colspan="2">
+                        <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                            <tr>
+                                <td width="665" style="font-family: Arial, Helvetica, sans-serif; font-size: 7pt">Is the owner registered for VAT?</td>
+                                <td align="right">Y <input type="text" style="border:1px solid #010202; width:17px; height:17px;" /> &nbsp; N <input type="text" style="border:1px solid #010202; width:17px; height:17px;" value="X" /></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="100%" height="4"></td>
+                </tr>
+                <tr>
+                    <td width="10" style="font-family: Arial, Helvetica, sans-serif; font-size: 7pt">1.8</td>
+                    <td width="5"></td>
+                    <td colspan="2">
+                        <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                            <tr>
+                                <td width="554" style="font-family: Arial, Helvetica, sans-serif; font-size: 7pt">If “YES”, provide the VAT registration number</td>
+                                <td align="right"><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="100%" height="4"></td>
+                </tr>
+                <tr>
+                    <td width="10" style="font-family: Arial, Helvetica, sans-serif; font-size: 7pt">1.7</td>
+                    <td width="5"></td>
+                    <td colspan="2">
+                        <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                            <tr>
+                                <td width="665" style="font-family: Arial, Helvetica, sans-serif; font-size: 7pt">Is the supply a taxable supply for VAT purposes?</td>
+                                <td align="right">Y <input type="text" style="border:1px solid #010202; width:17px; height:17px;" /> &nbsp; N <input type="text" style="border:1px solid #010202; width:17px; height:17px;" value="X" /></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+            <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                <tr>
+                    <td colspan="100%" height="8"></td>
+                </tr>
+                <tr>
+                    <td width="10" valign="top" style="font-family: Arial, Helvetica, sans-serif; font-size: 7pt">1.10</td>
+                    <td width="5"></td>
+                    <td width="100" valign="top" style="font-family: Arial, Helvetica, sans-serif; font-size: 7pt">Name of natural <br>person representing<br> the owner</td>
+                    <td valign="top" align="right">
+                        <!--<input type="text" style="border:1px solid #010202;width: 640px;" class="box-display" value="<input type="text" style="border: 1px solid #010202; width:17px; height:17px;" value="S"/><input type="text" style="border: 1px solid #010202; width:17px; height:17px;" value="a"/><input type="text" style="border: 1px solid #010202; width:17px; height:17px;" value="u"/><input type="text" style="border: 1px solid #010202; width:17px; height:17px;" value="r"/><input type="text" style="border: 1px solid #010202; width:17px; height:17px;" value="a"/><input type="text" style="border: 1px solid #010202; width:17px; height:17px;" value="b"/><input type="text" style="border: 1px solid #010202; width:17px; height:17px;" value="h"/><input type="text" style="border: 1px solid #010202; width:17px; height:17px;" value=" "/><input type="text" style="border: 1px solid #010202; width:17px; height:17px;" value="S"/><input type="text" style="border: 1px solid #010202; width:17px; height:17px;" value="i"/><input type="text" style="border: 1px solid #010202; width:17px; height:17px;" value="n"/><input type="text" style="border: 1px solid #010202; width:17px; height:17px;" value="g"/><input type="text" style="border: 1px solid #010202; width:17px; height:17px;" value="h"/><input type="text" style="border: 1px solid #010202; width:17px; height:17px;"/><input type="text" style="border: 1px solid #010202; width:17px; height:17px;"/><input type="text" style="border: 1px solid #010202; width:17px; height:17px;"/><input type="text" style="border: 1px solid #010202; width:17px; height:17px;"/><input type="text" style="border: 1px solid #010202; width:17px; height:17px;"/><input type="text" style="border: 1px solid #010202; width:17px; height:17px;"/><input type="text" style="border: 1px solid #010202; width:17px; height:17px;"/><input type="text" style="border: 1px solid #010202; width:17px; height:17px;"/><input type="text" style="border: 1px solid #010202; width:17px; height:17px;"/><input type="text" style="border: 1px solid #010202; width:17px; height:17px;"/><input type="text" style="border: 1px solid #010202; width:17px; height:17px;"/><input type="text" style="border: 1px solid #010202; width:17px; height:17px;"/><input type="text" style="border: 1px solid #010202; width:17px; height:17px;"/><input type="text" style="border: 1px solid #010202; width:17px; height:17px;"/><input type="text" style="border: 1px solid #010202; width:17px; height:17px;"/><input type="text" style="border: 1px solid #010202; width:17px; height:17px;"/><input type="text" style="border: 1px solid #010202; width:17px; height:17px;"/><input type="text" style="border: 1px solid #010202; width:17px; height:17px;"/><input type="text" style="border: 1px solid #010202; width:17px; height:17px;"/>" />-->
+                        <!--<input type="text" style="border: 1px solid #010202; width:17px; height:17px;" value="S"/><input type="text" style="border: 1px solid #010202; width:17px; height:17px;" value="a"/><input type="text" style="border: 1px solid #010202; width:17px; height:17px;" value="u"/><input type="text" style="border: 1px solid #010202; width:17px; height:17px;" value="r"/><input type="text" style="border: 1px solid #010202; width:17px; height:17px;" value="a"/><input type="text" style="border: 1px solid #010202; width:17px; height:17px;" value="b"/><input type="text" style="border: 1px solid #010202; width:17px; height:17px;" value="h"/><input type="text" style="border: 1px solid #010202; width:17px; height:17px;" value=" "/><input type="text" style="border: 1px solid #010202; width:17px; height:17px;" value="S"/><input type="text" style="border: 1px solid #010202; width:17px; height:17px;" value="i"/><input type="text" style="border: 1px solid #010202; width:17px; height:17px;" value="n"/><input type="text" style="border: 1px solid #010202; width:17px; height:17px;" value="g"/><input type="text" style="border: 1px solid #010202; width:17px; height:17px;" value="h"/><input type="text" style="border: 1px solid #010202; width:17px; height:17px;"/><input type="text" style="border: 1px solid #010202; width:17px; height:17px;"/><input type="text" style="border: 1px solid #010202; width:17px; height:17px;"/><input type="text" style="border: 1px solid #010202; width:17px; height:17px;"/><input type="text" style="border: 1px solid #010202; width:17px; height:17px;"/><input type="text" style="border: 1px solid #010202; width:17px; height:17px;"/><input type="text" style="border: 1px solid #010202; width:17px; height:17px;"/><input type="text" style="border: 1px solid #010202; width:17px; height:17px;"/><input type="text" style="border: 1px solid #010202; width:17px; height:17px;"/><input type="text" style="border: 1px solid #010202; width:17px; height:17px;"/><input type="text" style="border: 1px solid #010202; width:17px; height:17px;"/><input type="text" style="border: 1px solid #010202; width:17px; height:17px;"/><input type="text" style="border: 1px solid #010202; width:17px; height:17px;"/><input type="text" style="border: 1px solid #010202; width:17px; height:17px;"/><input type="text" style="border: 1px solid #010202; width:17px; height:17px;"/><input type="text" style="border: 1px solid #010202; width:17px; height:17px;"/><input type="text" style="border: 1px solid #010202; width:17px; height:17px;"/><input type="text" style="border: 1px solid #010202; width:17px; height:17px;"/><input type="text" style="border: 1px solid #010202; width:17px; height:17px;"/>-->
+                        {{FNametxtBox1}}
+                        <div style="padding-top: 3px;">
+                            <!--<input type="text" style="border:1px solid #010202;width: 640px;" class="box-display" value="<input type="text" style="border: 1px solid #010202; width:17px; height:17px;"/><input type="text" style="border: 1px solid #010202; width:17px; height:17px;"/><input type="text" style="border: 1px solid #010202; width:17px; height:17px;"/><input type="text" style="border: 1px solid #010202; width:17px; height:17px;"/><input type="text" style="border: 1px solid #010202; width:17px; height:17px;"/><input type="text" style="border: 1px solid #010202; width:17px; height:17px;"/><input type="text" style="border: 1px solid #010202; width:17px; height:17px;"/><input type="text" style="border: 1px solid #010202; width:17px; height:17px;"/><input type="text" style="border: 1px solid #010202; width:17px; height:17px;"/><input type="text" style="border: 1px solid #010202; width:17px; height:17px;"/><input type="text" style="border: 1px solid #010202; width:17px; height:17px;"/><input type="text" style="border: 1px solid #010202; width:17px; height:17px;"/><input type="text" style="border: 1px solid #010202; width:17px; height:17px;"/><input type="text" style="border: 1px solid #010202; width:17px; height:17px;"/><input type="text" style="border: 1px solid #010202; width:17px; height:17px;"/><input type="text" style="border: 1px solid #010202; width:17px; height:17px;"/><input type="text" style="border: 1px solid #010202; width:17px; height:17px;"/><input type="text" style="border: 1px solid #010202; width:17px; height:17px;"/><input type="text" style="border: 1px solid #010202; width:17px; height:17px;"/><input type="text" style="border: 1px solid #010202; width:17px; height:17px;"/><input type="text" style="border: 1px solid #010202; width:17px; height:17px;"/><input type="text" style="border: 1px solid #010202; width:17px; height:17px;"/><input type="text" style="border: 1px solid #010202; width:17px; height:17px;"/><input type="text" style="border: 1px solid #010202; width:17px; height:17px;"/><input type="text" style="border: 1px solid #010202; width:17px; height:17px;"/><input type="text" style="border: 1px solid #010202; width:17px; height:17px;"/><input type="text" style="border: 1px solid #010202; width:17px; height:17px;"/><input type="text" style="border: 1px solid #010202; width:17px; height:17px;"/><input type="text" style="border: 1px solid #010202; width:17px; height:17px;"/><input type="text" style="border: 1px solid #010202; width:17px; height:17px;"/><input type="text" style="border: 1px solid #010202; width:17px; height:17px;"/><input type="text" style="border: 1px solid #010202; width:17px; height:17px;"/>" />-->
+                            <!--<input type="text" style="border: 1px solid #010202; width:17px; height:17px;" /><input type="text" style="border: 1px solid #010202; width:17px; height:17px;" /><input type="text" style="border: 1px solid #010202; width:17px; height:17px;" /><input type="text" style="border: 1px solid #010202; width:17px; height:17px;" /><input type="text" style="border: 1px solid #010202; width:17px; height:17px;" /><input type="text" style="border: 1px solid #010202; width:17px; height:17px;" /><input type="text" style="border: 1px solid #010202; width:17px; height:17px;" /><input type="text" style="border: 1px solid #010202; width:17px; height:17px;" /><input type="text" style="border: 1px solid #010202; width:17px; height:17px;" /><input type="text" style="border: 1px solid #010202; width:17px; height:17px;" /><input type="text" style="border: 1px solid #010202; width:17px; height:17px;" /><input type="text" style="border: 1px solid #010202; width:17px; height:17px;" /><input type="text" style="border: 1px solid #010202; width:17px; height:17px;" /><input type="text" style="border: 1px solid #010202; width:17px; height:17px;" /><input type="text" style="border: 1px solid #010202; width:17px; height:17px;" /><input type="text" style="border: 1px solid #010202; width:17px; height:17px;" /><input type="text" style="border: 1px solid #010202; width:17px; height:17px;" /><input type="text" style="border: 1px solid #010202; width:17px; height:17px;" /><input type="text" style="border: 1px solid #010202; width:17px; height:17px;" /><input type="text" style="border: 1px solid #010202; width:17px; height:17px;" /><input type="text" style="border: 1px solid #010202; width:17px; height:17px;" /><input type="text" style="border: 1px solid #010202; width:17px; height:17px;" /><input type="text" style="border: 1px solid #010202; width:17px; height:17px;" /><input type="text" style="border: 1px solid #010202; width:17px; height:17px;" /><input type="text" style="border: 1px solid #010202; width:17px; height:17px;" /><input type="text" style="border: 1px solid #010202; width:17px; height:17px;" /><input type="text" style="border: 1px solid #010202; width:17px; height:17px;" /><input type="text" style="border: 1px solid #010202; width:17px; height:17px;" /><input type="text" style="border: 1px solid #010202; width:17px; height:17px;" /><input type="text" style="border: 1px solid #010202; width:17px; height:17px;" /><input type="text" style="border: 1px solid #010202; width:17px; height:17px;" /><input type="text" style="border: 1px solid #010202; width:17px; height:17px;" />-->
+                            {{LNametxtBox1}}
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                <tr>
+                    <td colspan="100%" height="4"></td>
+                </tr>
+                <tr>
+                    <td width="10" style="font-family: Arial, Helvetica, sans-serif; font-size: 7pt">1.11</td>
+                    <td width="5"></td>
+                    <td colspan="2">
+                        <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                            <tr>
+                                <td width="493" style="font-family: Arial, Helvetica, sans-serif; font-size: 7pt">Identity number of the natural person refered to in 1.10 above</td>
+                                <td align="right">
+
+                                    <!--<input type="text" style="border:1px solid #010202;width: 250px;" class="box-display" value="<input type='text' style='border: 1px solid #010202; width:17px; height:17px;' value='1'/><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' value='2'/><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' value='3'/><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' value='1'/><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' value='2'/><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' value='3'/><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' value='1'/><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' value='3'/><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' value='1'/><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' value='2'/><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' value='3'/><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' value='1'/><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' value='1'/>" />-->
+                                    <!--<input type='text' style='border: 1px solid #010202; width:17px; height:17px;' value='1'/><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' value='2'/><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' value='3'/><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' value='1'/><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' value='2'/><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' value='3'/><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' value='1'/><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' value='3'/><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' value='1'/><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' value='2'/><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' value='3'/><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' value='1'/><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' value='1'/>-->
+                                    <!--<input type="text" style="border:1px solid #010202;width: 290px;" class="box-display" value="<input type='text' style='border: 1px solid #010202; width:17px; height:17px;' value='1'/><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' value='2'/><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' value='3'/><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' value='1'/><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' value='2'/><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' value='3'/><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' value='1'/><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' value='3'/><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' value='1'/><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' value='2'/><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' value='3'/><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' value='1'/><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' value='1'/>" />-->
+                                    {{IDnumber}}
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+            <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                <tr>
+                    <td height="4"></td>
+                </tr>
+                <tr>
+                    <td width="100%">
+                        <h1 style="font-family: Arial, Helvetica, sans-serif; font-size: 8pt; font-weight: bold; background:#0A4A7C; color: #FFFFFF; padding: 5px 8px; border-radius: 5px;">Section 2 - Description of Goods</h1>
+                    </td>
+                </tr>
+            </table>
+            <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                <tr>
+                    <td colspan="100%" height="4"></td>
+                </tr>
+                <tr>
+                    <td valign="top" width="10" style="font-family: Arial, Helvetica, sans-serif; font-size: 7pt">2.1</td>
+                    <td valign="top" width="5"></td>
+                    <td valign="top" width="67" style="font-family: Arial, Helvetica, sans-serif; font-size: 7pt">Description</td>
+                    <td valign="top" nowrap="nowrap" align="right">
+                        <!--<input type="text" style="border:1px solid #010202;width: 650px;" class="box-display" value="<input type='text' style='border: 1px solid #010202; width:17px; height:17px;' value='i'/><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' value='P'/><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' value='h'/><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' value='o'/><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' value='n'/><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' value='e'/><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' value=' '/><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' value='6'/><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' value=' '/><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' value='3'/><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' value='2'/><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' value=' '/><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' value='G'/><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' value='B'/><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' />" />-->
+                        <!--<input type='text' style='border: 1px solid #010202; width:17px; height:17px;' value='i'/><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' value='P'/><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' value='h'/><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' value='o'/><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' value='n'/><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' value='e'/><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' value=' '/><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' value='6'/><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' value=' '/><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' value='3'/><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' value='2'/><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' value=' '/><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' value='G'/><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' value='B'/><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' />-->
+                        {{MakeNModel}}
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="100%" height="4"></td>
+                </tr>
+                <tr>
+                    <td valign="top" style="font-family: Arial, Helvetica, sans-serif; font-size: 7pt">2.2</td>
+                    <td></td>
+                    <td width="125" valign="top" style="font-family: Arial, Helvetica, sans-serif; font-size: 7pt">Quantity/<br /> Volume/Mass</td>
+                    <td valign="top">
+                        <input type="text" style="border:1px solid #010202; width:17px; height:17px;" value="1" />
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="100%" height="4"></td>
+                </tr>
+                <tr>
+                    <td valign="top" style="font-family: Arial, Helvetica, sans-serif; font-size: 7pt">2.3</td>
+                    <td></td>
+                    <td width="67" valign="top" style="font-family: Arial, Helvetica, sans-serif; font-size: 7pt">Make and model+</td>
+                    <td valign="top" align="right">
+                        <input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" />
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="100%" height="4"></td>
+                </tr>
+                <tr>
+                    <td valign="top" style="font-family: Arial, Helvetica, sans-serif; font-size: 7pt">2.4</td>
+                    <td></td>
+                    <td width="67" valign="top" style="font-family: Arial, Helvetica, sans-serif; font-size: 7pt">Registration  number+</td>
+                    <td valign="top" align="right">
+                        <input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" />
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="100%" height="4"></td>
+                </tr>
+                <tr>
+                    <td valign="top" style="font-family: Arial, Helvetica, sans-serif; font-size: 7pt">2.5</td>
+                    <td></td>
+                    <td width="67" valign="top" style="font-family: Arial, Helvetica, sans-serif; font-size: 7pt">Chassis  number+</td>
+                    <td valign="top" align="right">
+                        <input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" />
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="100%" height="4"></td>
+                </tr>
+                <tr>
+                    <td valign="top" style="font-family: Arial, Helvetica, sans-serif; font-size: 7pt">2.6</td>
+                    <td></td>
+                    <td width="67" valign="top" style="font-family: Arial, Helvetica, sans-serif; font-size: 7pt">Engine  number+</td>
+                    <td valign="top" align="right">
+                        <input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" />
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="100%" height="4"></td>
+                </tr>
+                <tr>
+                    <td valign="top" style="font-family: Arial, Helvetica, sans-serif; font-size: 7pt">2.7</td>
+                    <td></td>
+                    <td width="67" valign="top" style="font-family: Arial, Helvetica, sans-serif; font-size: 7pt">Odometer  reading+</td>
+                    <td valign="top" align="right">
+                        <input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" />
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="100%" height="4"></td>
+                </tr>
+                <tr>
+                    <td valign="top" style="font-family: Arial, Helvetica, sans-serif; font-size: 7pt">2.8</td>
+                    <td></td>
+                    <td width="67" valign="top" style="font-family: Arial, Helvetica, sans-serif; font-size: 7pt">VIN number/ SAP number+</td>
+                    <td valign="top" align="right">
+                        <input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" />
+                    </td>
+                </tr>
+            </table>
+            <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                <tr>
+                    <td height="4"></td>
+                </tr>
+                <tr>
+                    <td width="100%">
+                        <h1 style="font-family: Arial, Helvetica, sans-serif; font-size: 8pt; font-weight: bold; background:#0A4A7C; color: #FFFFFF; padding: 5px 8px; border-radius: 5px;">Section 3 -  Payment</h1>
+                    </td>
+                </tr>
+            </table>
+            <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                <tr>
+                    <td height="4"></td>
+                </tr>
+                <tr>
+                    <td width="10" style="font-family: Arial, Helvetica, sans-serif; font-size: 7pt">3.1</td>
+                    <td width="5"></td>
+                    <td colspan="2">
+                        <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                            <tr>
+                                <td width="523" style="font-family: Arial, Helvetica, sans-serif; font-size: 7pt">Selling price of goods/balance of cash value of repossessed or surrendered goods</td>
+                                <td align="right">
+                                    <b>{{Currency}}</b>
+                                    <!--<input type="text" style="border:1px solid #010202;width: 210px;" class="box-display" value="<input type='text' style='border: 1px solid #010202; width:17px; height:17px;' value='3'/><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' value='5'/><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' value='0'/><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' />" />-->
+                                    <!--<input type='text' style='border: 1px solid #010202; width:17px; height:17px;' value='3'/><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' value='5'/><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' value='0'/><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' />-->
+                                    {{QuotedPrice}}
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td height="4"></td>
+                </tr>
+                <tr>
+                    <td width="10" style="font-family: Arial, Helvetica, sans-serif; font-size: 7pt">3.2</td>
+                    <td width="5"></td>
+                    <td colspan="2">
+                        <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                            <tr>
+                                <td width="498" style="font-family: Arial, Helvetica, sans-serif; font-size: 7pt">Payment reference number (e.g. cheque or receipt number)</td>
+                                <td align="right">
+                                    <!--<input type="text" style="border:1px solid #010202;width: 210px;" class="box-display" value="<input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' />" />-->
+                                    <!--<input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' />-->
+                                    {{OrderDetailID}}
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td height="4"></td>
+                </tr>
+                <tr>
+                    <td width="10" style="font-family: Arial, Helvetica, sans-serif; font-size: 7pt">3.3</td>
+                    <td width="5"></td>
+                    <td colspan="2">
+                        <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                            <tr>
+                                <td width="596" style="font-family: Arial, Helvetica, sans-serif; font-size: 7pt">Date of payment/trade-in/repossession or surrender</td>
+                                <td align="right">
+                                    <!--<input type="text" style="border:1px solid #010202;width: 210px;" class="box-display" value="<input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' />" />-->
+                                    <!--<input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' /><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' />-->
+                                    {{PaymentGeneratedDate}}
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td height="4"></td>
+                </tr>
+                <tr>
+                    <td width="10" style="font-family: Arial, Helvetica, sans-serif; font-size: 7pt">3.4</td>
+                    <td width="5"></td>
+                    <td colspan="2">
+                        <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                            <tr>
+                                <td width="498" style="font-family: Arial, Helvetica, sans-serif; font-size: 7pt">If traded-in, invoice number for new goods purchased</td>
+                                <td align="right">
+                                    <input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" /><input type="text" style="border:1px solid #010202; width:17px; height:17px;" />
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+            <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                <tr>
+                    <td height="4"></td>
+                </tr>
+                <tr>
+                    <td width="100%">
+                        <h1 style="font-family: Arial, Helvetica, sans-serif; font-size: 8pt; font-weight: bold; background:#0A4A7C; color: #FFFFFF; padding: 5px 8px; border-radius: 5px;">Section 4 -  Notes</h1>
+                    </td>
+                </tr>
+            </table>
+            <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                <tr>
+                    <td height="4"></td>
+                </tr>
+                <tr>
+                    <td width="10" style="font-family: Arial, Helvetica, sans-serif; font-size: 7pt">4.1</td>
+                    <td width="5"></td>
+                    <td style="font-family: Arial, Helvetica, sans-serif; font-size: 7pt">
+                        "Notional input tax" means paragraph (b) of the definition of "input tax" in section 1 of the VAT Act
+                    </td>
+                </tr>
+                <tr>
+                    <td height="4"></td>
+                </tr>
+                <tr>
+                    <td width="10" style="font-family: Arial, Helvetica, sans-serif; font-size: 7pt">4.2</td>
+                    <td width="5"></td>
+                    <td style="font-family: Arial, Helvetica, sans-serif; font-size: 7pt">
+                        If the answer to 1.5 or 1.6 is “NO”, notional input tax cannot be deducted
+                    </td>
+                </tr>
+                <tr>
+                    <td height="4"></td>
+                </tr>
+                <tr>
+                    <td width="10" style="font-family: Arial, Helvetica, sans-serif; font-size: 7pt">4.3</td>
+                    <td width="5"></td>
+                    <td style="font-family: Arial, Helvetica, sans-serif; font-size: 7pt">
+                        If the answer to 1.9 is “YES” notional input tax cannot be deducted. A valid tax invoice is required from the supplier
+                    </td>
+                </tr>
+                <tr>
+                    <td height="4"></td>
+                </tr>
+                <tr>
+                    <td valign="top" width="10" style="font-family: Arial, Helvetica, sans-serif; font-size: 7pt">4.4</td>
+                    <td width="5"></td>
+                    <td valign="top" style="font-family: Arial, Helvetica, sans-serif; font-size: 7pt">
+                        Unless SARS has issued a VAT ruling or a Binding General Ruling to the contrary, notional input tax is limited to the lesser of the amount paid for the supply, or the open market value of that supply. In addition, if the payment of the selling price is not made in full, notional input tax is limited to the extent of the payment made.
+                    </td>
+                </tr>
+            </table>
+            <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                <tr>
+                    <td height="4"></td>
+                </tr>
+                <tr>
+                    <td width="100%">
+                        <h1 style="font-family: Arial, Helvetica, sans-serif; font-size: 8pt; font-weight: bold; background:#0A4A7C; color: #FFFFFF; padding: 5px 8px; border-radius: 5px;">Declaration</h1>
+                    </td>
+                </tr>
+            </table>
+            <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                <tr>
+                    <td height="4"></td>
+                </tr>
+                <tr>
+                    <td style="font-family: Arial, Helvetica, sans-serif; font-size: 7pt">
+                        I hereby declare that the details furnished herein for the supply of the goods by way of trade-in/sale, repossession or surrender is true and accurate
+                    </td>
+                </tr>
+            </table>
+            <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                <tr>
+                    <td height="4" colspan="100%"></td>
+                </tr>
+                <tr>
+                    <td width="500">
+                        <textarea style="border:1px solid #010202; width:100%; height:25pt; resize:none;">{{CustomerName}}</textarea>
+                        <span style="font-family: Arial, Helvetica, sans-serif; font-size: 7pt; padding: 0; margin: 0; display: block;">Signature of owner supplying the goods or person duly authorised to represent the owner supplying the goods.</span>
+                    </td>
+                    <td width="115"></td>
+                    <td valign="bottom">
+                        <!--<input type="text" style="border:1px solid #010202;width: 165px; height:20px; margin-bottom:4px" class="box-display" value="<input type='text' style='border: 1px solid #010202; width:17px; height:17px;' value='2'/><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' value='0'/><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' value='2'/><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' value='0'/><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' value='1'/><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' value='1'/><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' value='0'/><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' value='2'/>" />-->
+                        <!--<input type='text' style='border: 1px solid #010202; width:17px; height:17px;' value='2'/><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' value='0'/><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' value='2'/><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' value='0'/><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' value='1'/><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' value='1'/><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' value='0'/><input type='text' style='border: 1px solid #010202; width:17px; height:17px;' value='2'/>-->
+                        {{CurrentDate}}
+                        <span style="font-family: Arial, Helvetica, sans-serif; font-size: 7pt; padding: 0; margin: 0; display: block; text-align: center;">Date (C C Y Y M M D D).</span>
+                    </td>
+                </tr>
+            </table>
+        </section>
+    </page>
+</body>
+</html>
