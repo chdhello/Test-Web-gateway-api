@@ -1,0 +1,10 @@
+  <add key="FPCToMail" value="Abhishek.Kumar@veridic.com;ravinder.yadav@veridic.com" />
+  <add key="ftpPostContract" value="Telenor/PostContractDocument" />
+	<add key="ftpPostContractLogs" value="Telenor/PostContractLogs" />
+	<add key="WarehouseDeviceReceivedTemplatePath_SWAP" value="/DeviceReceived_SWAP.html" />
+	<add key="WarehouseDeviceReceivedTemplatePath_NONSWAP" value="/DeviceReceived_NON_SWAP.html" />	
+	<add key="PuzzleSMSGateway" value="http://puzzle-sms-web-gw-api.product.veridic.local/" />
+	<add key="WarehouseDeviceReceivedTemplatePath" value="/DeviceReceived.html" />
+	<add key="WarehouseMoveToLocationTemplatePath" value="/MoveToLocation.html" />
+	<add key="WarehouseInspectedBERTemplatePath" value="/Trade-In_Complete_BER.html" />
+	<add key="FMIPLockedTemplatePath" value="/FMIP-Locked.html" />
