@@ -1,0 +1,14 @@
+install services command sc.exe create servicesname binpath= 
+
+delete services command  sc delete servicesname
+
+
+digitalcare-warehouse-x-im-api.product.veridic.local
+
+
+sc.exe create ReminderAwaitingTradeInService_SwapCash binpath= "D:\Product\SwapCash\Services\SwapCash_ReminderAwaitingTradeInService\ReminderAwaitingTradeInService_SwapCash.exe"
+
+
+
+
+-ExecutionPolicy unrestricted -Command Invoke-WebRequest "https://swapcash-web-gateway-api-st.cellde.com/gateway/DeleteRecreateMongoPartnerDB/1/1"
