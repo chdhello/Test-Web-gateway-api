@@ -1,3 +1,0 @@
-sc.exe create FMIPStatusService_Omni binpath= "E:\Product\Services\Omni_FMIPStatusService\FMIPStatusService_Omni.exe" 
-
-sc.exe create ReminderAwaitingTradeInService_Omni binpath= "E:\Product\Services\Omni_ReminderAwaitingTradeInService\ReminderAwaiting_Omni.exe"
